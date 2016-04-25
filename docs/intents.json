@@ -1,0 +1,100 @@
+{
+  "intents": [
+    {
+      "intent": "LaunchIntent"
+    },{
+      "intent": "BuyIntent",
+      "slots": [
+        {
+          "name": "acresCnt",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "acres",
+          "type": "ACRES"
+        },
+        {
+          "name": "please",
+          "type": "PLEASE"
+        }
+      ]
+    },{
+      "intent": "SellIntent",
+      "slots": [{
+        "name": "acresCnt",
+        "type": "AMAZON.NUMBER"
+      },{
+          "name": "acres",
+          "type": "ACRES"
+        },
+        {
+          "name": "please",
+          "type": "PLEASE"
+        }
+      ]
+    },{
+      "intent": "FeedPeopleIntent",
+      "slots": [
+        {
+          "name": "peopleCnt",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "people",
+          "type": "PEOPLE"
+        }
+      ]
+    },{
+      "intent": "FeedEveryoneIntent",
+      "slots": [
+        {
+          "name": "people",
+          "type": "PEOPLE"
+        }
+      ]
+    },{
+      "intent": "FeedNoOneIntent",
+      "slots": [
+        {
+          "name": "people",
+          "type": "PEOPLE"
+        }
+      ]
+    },{
+      "intent": "PlantIntent",
+      "slots": [
+        {
+          "name": "plant",
+          "type": "PLANT"
+        },
+        {
+          "name": "acres",
+          "type": "ACRES"
+        },
+        {
+          "name": "plantCnt",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },{
+      "intent": "PlantAllIntent",
+      "slots": [
+        {
+          "name": "plant",
+          "type": "PLANT"
+        },
+        {
+          "name": "acres",
+          "type": "ACRES"
+        }
+      ]
+    },{
+      "intent": "AMAZON.RepeatIntent",
+      "slots": []
+    },{
+      "intent": "NextYearIntent",
+      "slots": []
+    }
+
+  ]
+}

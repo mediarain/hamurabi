@@ -1,0 +1,12 @@
+person
+people
+subject
+subjects
+peasants
+peons
+serfs
+slaves
+minions
+dudes
+guys
+gals

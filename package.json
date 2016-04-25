@@ -1,0 +1,36 @@
+{
+  "name": "Hammurabi-Alexa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "compile": "node node_modules/gulp/bin/gulp.js compile",
+    "start": "node node_modules/gulp/bin/gulp.js",
+    "test": "mocha --harmony tests/**/*-test.js"
+  },
+  "repository": "https://github.com/mediarain/hammurabi-skill",
+  "author": "Mitchell Harris",
+  "engines": {
+    "node": ">10.3 < 0.12"
+  },
+  "license": "UNLIECENSED",
+  "dependencies": {
+    "bluebird": "^3.3.1",
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "lodash": "^4.2.1",
+    "morgan": "^1.6.1",
+    "string": "^3.3.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.8.11",
+    "gulp-debug": "^2.1.2",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-watch": "^4.2.2",
+    "mocha": "^2.4.5",
+    "run-sequence": "^1.0.2"
+  }
+}

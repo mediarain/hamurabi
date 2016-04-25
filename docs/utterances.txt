@@ -1,0 +1,63 @@
+LaunchIntent play a game
+LaunchIntent manage my kingdom
+LaunchIntent manage my fiefdom
+
+BuyIntent buy {acresCnt} {acres} {please}
+BuyIntent purchase {acresCnt} {acres} {please}
+BuyIntent buy {acresCnt} {acres}
+BuyIntent purchase {acresCnt} {acres}
+BuyIntent acquire {acresCnt} {acres}
+
+SellIntent sell {acresCnt} {acres} {please}
+SellIntent sell {acresCnt} {acres}
+SellIntent sell {acresCnt} of my {acres}
+SellIntent liquidate {acresCnt} {acres}
+SellIntent reduce my {acres} by {acresCnt}
+
+FeedPeopleIntent feed {peopleCnt} {people}
+FeedPeopleIntent give food to {peopleCnt} {people}
+FeedPeopleIntent let {peopleCnt} {people} live
+FeedPeopleIntent provide for {peopleCnt} {people}
+
+FeedEveryoneIntent feed everyone
+FeedEveryoneIntent feed everybody
+FeedEveryoneIntent feed all my {people}
+FeedEveryoneIntent feed all the {people}
+FeedEveryoneIntent feed with the rest
+FeedEveryoneIntent use the rest to feed
+
+FeedNoOneIntent feed none of my {people}
+FeedNoOneIntent feed no {people}
+FeedNoOneIntent feed none of the {people}
+FeedNoOneIntent let them starve
+FeedNoOneIntent starve them
+FeedNoOneIntent starve my {people}
+FeedNoOneIntent starve {people}
+FeedNoOneIntent starve everyone
+FeedNoOneIntent starve the {people}
+
+PlantIntent {plant} {plantCnt} {acres}
+PlantIntent {plant} {plantCnt} bushels
+
+PlantAllIntent {plant} all of them
+PlantAllIntent {plant} all of {acres}
+PlantAllIntent {plant} all of my {acres}
+PlantAllIntent use the rest to {plant}
+PlantAllIntent {plant} everything
+PlantAllIntent {plant} with the rest
+
+AMAZON.RepeatIntent what's my status
+AMAZON.RepeatIntent what is my status
+AMAZON.RepeatIntent report
+AMAZON.RepeatIntent survey
+AMAZON.RepeatIntent survey my lands
+AMAZON.RepeatIntent repeat
+AMAZON.RepeatIntent say that again
+
+NextYearIntent that's it
+NextYearIntent next year
+NextYearIntent go to next year
+NextYearIntent what happens next
+NextYearIntent see what happens next
+NextYearIntent iterate
+NextYearIntent end the year

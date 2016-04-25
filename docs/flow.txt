@@ -1,0 +1,10 @@
+(entry) => {Welcome} , [init game] => (report)
+(report) => {Report},{ActionQuery} => (query-action)
+(query-action) => [handle intent]
+    all complete? => (next-year)
+(next-year) => [do iteration] 
+  all over? => {Final Report} => (die)
+  => (report)
+
+
+
