@@ -69,7 +69,7 @@ HammurabiGame.prototype.iterate = function iterate(cmd) {
   // REM *** HORRORS, A 15% CHANCE OF PLAGUE
   next.hadPlague = (cmd.plagueRoll || Math.random()) <= .15;
   if (next.hadPlague) {
-    next.population = next.population / 2;
+    next.population = Math.floor(next.population / 2);
   }
   next.population += next.immigrants;
   return next;

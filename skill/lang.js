@@ -9,7 +9,7 @@ exports.an = function (word) {
 };
 
 exports.quantify = function (quantity, word, plural) {
-  if (quantity > 1) return '' + quantity + ' ' + (plural || exports.pluralize(word));
+  if (quantity > 1 || quantity < 1) return '' + quantity + ' ' + (plural || exports.pluralize(word));
   if (!quantity) return 'no ' + (plural || exports.pluralize(word));
   return '1' + ' ' + word;
 };

@@ -1,0 +1,182 @@
+[acres] acres
+[acres] acres of land
+[acres] parcels
+[acres] parcels of land
+[acres] lots
+[acres] lots of land
+[acres] plots
+[acres] plots of land
+
+[people] people
+[people] subjects
+[people] peasants
+[people] dudes
+[people] person
+[people] dudes
+[people] gals
+[people] serfs
+
+[kingdom] kingdom
+[kingdom] fiefdom
+[kingdom] city
+[kingdom] realm
+[kingdom] domain
+
+LaunchIntent play a game
+LaunchIntent launch
+LaunchIntent start
+LaunchIntent open
+LaunchIntent manage my [kingdom]
+
+[buy] buy
+[buy] purchase
+[buy] acquire
+
+BuyIntent [buy] {acresCnt} [acres] [PLEASE]
+BuyIntent [buy] {acresCnt} [PLEASE]
+
+BuyWithRestIntent [buy] [acres] with whats left [PLEASE]
+BuyWithRestIntent [buy] with whats left [PLEASE]
+BuyWithRestIntent use the rest to buy [acres] [PLEASE]
+BuyWithRestIntent use the rest to buy [PLEASE]
+
+[sell] sell
+[sell] liquidate
+
+SellIntent [sell] {acresCnt} [acres] [PLEASE]
+SellIntent reduce my [acres] by {acresCnt}
+SellIntent [sell] {acresCnt} [PLEASE]
+
+[feed] feed
+[feed] give food for
+[feed] provide for
+
+FeedPeopleIntent [feed] {peopleCnt} [people] [PLEASE]
+FeedPeopleIntent let {peopleCnt} [people] live [PLEASE]
+
+FeedEveryoneIntent feed everyone [PLEASE]
+FeedEveryoneIntent feed everybody [PLEASE]
+FeedEveryoneIntent feed all my [people] [PLEASE]
+FeedEveryoneIntent feed all the [people] [PLEASE]
+FeedEveryoneIntent feed with the rest [PLEASE]
+FeedEveryoneIntent use the rest to feed [PLEASE]
+FeedEveryoneIntent feed my [people] [PLEASE]
+
+FeedNoOneIntent feed none of my [people]
+FeedNoOneIntent feed no [people]
+FeedNoOneIntent feed no one
+FeedNoOneIntent feed none of the [people]
+FeedNoOneIntent let them starve
+FeedNoOneIntent starve them
+FeedNoOneIntent starve my [people]
+FeedNoOneIntent starve [people]
+FeedNoOneIntent starve everyone
+FeedNoOneIntent starve the [people]
+FeedNoOneIntent wipe them out
+FeedNoOneIntent wipe them out all of them
+FeedNoOneIntent let them eat cake
+
+[plant] plant
+[plant] sow
+[plant] seed
+
+PlantIntent [plant] {plantCnt} [acres] [PLEASE]
+PlantIntent [plant] {plantCnt} [PLEASE]
+PlantIntent [plant] {plantCnt} bushels [PLEASE]
+
+PlantAllIntent [plant] all of them
+PlantAllIntent [plant] all of [acres]
+PlantAllIntent [plant] all of my [acres]
+PlantAllIntent use the rest to [plant]
+PlantAllIntent [plant] everything
+PlantAllIntent [plant] with the rest
+
+PlantNothingIntent [plant] nothing
+PlantNothingIntent [plant] no [acres]
+PlantNothingIntent [plant] no [bushels]
+
+AMAZON.RepeatIntent what's my status
+AMAZON.RepeatIntent what is my status
+AMAZON.RepeatIntent report
+AMAZON.RepeatIntent survey
+AMAZON.RepeatIntent survey my lands
+AMAZON.RepeatIntent repeat
+AMAZON.RepeatIntent say that again
+
+ActionsQueryIntent what am I doing
+ActionsQueryIntent what am I doing again
+ActionsQueryIntent what are my actions
+ActionsQueryIntent how much am I [plant]ing
+ActionsQueryIntent how much am I [buy]ing
+ActionsQueryIntent how much am I [sell]ing
+ActionsQueryIntent how much am I [feed]ing
+ActionsQueryIntent how many [acres] am I [plant]ing
+ActionsQueryIntent how many [acres] am I [buy]ing
+ActionsQueryIntent how many [acres] am I [sell]ing
+ActionsQueryIntent how many [people] am I [feed]ing
+ActionsQueryIntent how many bushels do i have left
+ActionsQueryIntent how many bushels do i have
+
+AcresCostQueryIntent how much do [acres] cost
+AcresCostQueryIntent how much are [acres] [sell]ing for
+AcresCostQueryIntent how many [acres] can I buy
+AcresCostQueryIntent how many [acres] can I sell
+
+AcresQueryIntent how many [acres] do I have
+AcresQueryIntent how many [acres] do I own
+AcresQueryIntent how many [acres] belong to me
+AcresQueryIntent how many [acres] are in my [kingdom]
+
+PopulationQueryIntent how many [people] do I have
+PopulationQueryIntent how many [people] do I have in my [kingdom]
+PopulationQueryIntent how many [people] are in my [kingdom]
+PopulationQueryIntent how many [people] are in the [kingdom]
+PopulationQueryIntent what is my population
+PopulationQueryIntent what is my [kingdom]'s population
+
+NextYearIntent that's it
+NextYearIntent that's all
+NextYearIntent done
+NextYearIntent I'm done
+NextYearIntent next year
+NextYearIntent go to next year
+NextYearIntent what happens next
+NextYearIntent see what happens next
+NextYearIntent iterate
+NextYearIntent end the year
+
+AMAZON.HelpIntent [HELP]
+
+AMAZON.CancelIntent [CANCEL]
+
+AMAZON.StopIntent [STOP]
+AMAZON.StopIntent abandon my [kingdom]
+AMAZON.StopIntent walk away from it all
+
+AMAZON.YesIntent [YES]
+AMAZON.NoIntent [NO]
+
+AMAZON.StartOverIntent [STARTOVER]
+AMAZON.StartOverIntent play another game
+AMAZON.StartOverIntent try again
+
+[amoment] a bit
+[amoment] a moment
+[amoment] a second
+[amoment] a hot second
+[amoment] a minute
+[amoment] a while
+[amoment] some time
+
+WaitIntent give me [amoment] to think
+WaitIntent let me think
+WaitIntent hang on
+WaitIntent hang on for [amoment]
+WaitIntent hold on
+WaitIntent hold on for [amoment]
+WaitIntent [amoment]
+WaitIntent one bit
+WaitIntent one moment
+WaitIntent one second
+WaitIntent one minute
+WaitIntent pause

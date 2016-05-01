@@ -14,6 +14,10 @@ exports.mostCanSellAcres = function(game,cmd) {
   return lang.quantify(cmd.mostCanSell(game),'acre');
 }
 
+exports.leastCanSellAcres = function(game,cmd) {
+  return lang.quantify(cmd.leastCanSell(game),'acre');
+}
+
 exports.mostCanFeedPeople = function(game,cmd) {
   return lang.quantify(cmd.mostCanFeed(game),'person','people');
 }
@@ -26,12 +30,20 @@ exports.mostCanPlantBushels = function(game,cmd) {
   return lang.quantify(cmd.mostCanPlant(game),'bushel');
 }
 
+exports.acresCost = function(game,cmd) {
+  return lang.quantify(game.acresCost,'bushel');
+}
+
 exports.buyAcres = function(game,cmd) {
-  return lang.quantify(cmd.buy,'acres');
+  return lang.quantify(Math.abs(cmd.buy),'acre');
 }
 
 exports.sellAcres = function(game,cmd) {
-  return lang.quantify(-1 * cmd.buy,'acres');
+  return lang.quantify(-1 * cmd.buy,'acre');
+}
+
+exports.attemptedSellAcres = function(game,cmd) {
+  return lang.quantify(-1 * cmd.attemptedBuy,'acre');
 }
 
 exports.buyBushels = function(game,cmd) {
@@ -67,7 +79,7 @@ exports.plantBushels = function(game,cmd) {
 }
 
 exports.bushels = function(game,cmd) {
-  return lang.quantify(game.plant,'bushel');
+  return lang.quantify(game.bushels,'bushel');
 }
 
 exports.acres = function(game,cmd) {
@@ -80,6 +92,21 @@ exports.bushelsUnused = function(game,cmd) {
 
 exports.bushelsLeft = function(game,cmd) {
   return lang.quantify(cmd.bushelsLeft(game),'bushel') + ' left';
+}
+
+exports.bushelsRemaining = function(game,cmd) {
+  return lang.quantify(cmd.bushelsLeft(game),'remaining bushel');
+}
+
+exports.commandStatus = function(game,cmd) {
+  var statements = [];
+  if(cmd.buy > 0) statements.push("You're buying " + exports.buyAcres(game,cmd) +'.')
+  if(cmd.buy < 0) statements.push("You're selling " + exports.buyAcres(game,cmd) +'.')
+  if(cmd.plant) statements.push("You're planting " + exports.plantAcres(game,cmd) +'.')
+  if(cmd.feed) statements.push("You're feeding " + exports.feedPeople(game,cmd) +'.')
+
+  if(!statements.length) return "You've got no plans yet this year and have " + exports.bushels(game,cmd) +  ".";
+  return statements.join('\n') + "\nYou've got " + exports.bushelsRemaining(game,cmd)+".";
 }
 
 exports.kingdomStatus = function(game) {
@@ -117,19 +144,19 @@ exports.finalKingdomStatus = function(game) {
     return "YOU STARVED " + people(game.peopleDied) + " IN ONE YEAR!!!\n" + loseMsg;
   }
   var msg =
-"IN YOUR 10-YEAR TERM OF OFFICE, " + game.percentPopDied + " PERCENT OF THE\n" +
-"POPULATION STARVED PER YEAR ON AVERAGE, I.E., A TOTAL OF" + people(game.died) + " DIED!!\n"+
+"IN YOUR 10-YEAR TERM OF OFFICE, " + game.percentPopDied.toFixed(0) + " PERCENT OF THE\n" +
+"POPULATION STARVED PER YEAR ON AVERAGE, I.E., A TOTAL OF " + people(game.peopleDied) + " DIED!!\n"+
 "YOU STARTED WITH 10 ACRES PER PERSON AND ENDED WITH " + acresPerPerson + " ACRES PER PERSON.\n";
 
-  if (percentPopDied > 33 || acresPerPerson < 7) return msg + loseMsg;
-  if (percentPopDied > 10 || acresPerPerson < 9)
+  if (game.percentPopDied > 33 || acresPerPerson < 7) return msg + loseMsg;
+  if (game.percentPopDied > 10 || acresPerPerson < 9)
   {
     return msg + "YOUR HEAVY-HANDED PERFORMANCE SMACKS OF NERO AND IVAN IV.\n" +
       "THE PEOPLE (REMAINING) FIND YOU AN UNPLEASANT RULER, AND,\n"+
       "FRANKLY, HATE YOUR GUTS!\n" + despedida;
       ;
   }
-  else if (percentPopDied > 3 || acresPerPerson < 10)
+  else if (game.percentPopDied > 3 || acresPerPerson < 10)
   {
     return msg + "YOUR PERFORMANCE COULD HAVE BEEN SOMEWHAT BETTER, BUT REALLY WASN'T TOO BAD AT ALL.\n" +
       Math.floor(game.population * .8 * Math.random() )+ " PEOPLE WOULD " +
@@ -152,6 +179,7 @@ function people(cnt) {
 function acres(cnt) {
   return !cnt ? 'NO ACRES'
        : cnt == 1 ? '1 ACRE'
+       : cnt <= 1 ? '1 ACRE'
        : '' + cnt +' ACRES'
 }
 

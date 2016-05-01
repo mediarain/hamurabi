@@ -33,6 +33,10 @@ Command.prototype.mostCanFeed = function(state) {
   return Math.min(Math.floor( (state.bushels - this.buy * state.acresCost - this.plant) / gameParams.bushelsToFeedPerson ),state.population);
 }
 
+Command.prototype.leastCanSell= function(state) {
+  return Math.max(0, -1 * Math.floor( (state.bushels - this.feed * gameParams.bushelsToFeedPerson - this.plant) / state.acresCost  ));
+}
+
 Command.prototype.mostCanSell= function(state) {
   return state.acres - this.plant;
 }
@@ -46,6 +50,8 @@ Command.prototype.buyError= function(state,toBuy) {
   if(toBuy < 0) {
     if(toBuy * -1 > state.acres) return ERRORS.EXCESSIVE_ACRES;
     if(toBuy * -1 + cmd.plant > state.acres) return ERRORS.EXCESSIVE_ACRES_WITH_COMMAND;
+    console.log(cmd.plant , cmd.feed * gameParams.bushelsToFeedPerson , state.bushels , toBuy * -1 * state.acresCost );
+    if(cmd.plant + cmd.feed * gameParams.bushelsToFeedPerson > state.bushels + toBuy * -1 * state.acresCost ) return ERRORS.INSUFFICIENT_BUSHELS_WITH_COMMAND;
   } else {
     if(toBuy * state.acresCost  > state.bushels) return ERRORS.INSUFFICIENT_BUSHELS;
     if(toBuy * state.acresCost + cmd.plant + cmd.feed * gameParams.bushelsToFeedPerson > state.bushels) return ERRORS.INSUFFICIENT_BUSHELS_WITH_COMMAND;
@@ -55,8 +61,8 @@ Command.prototype.buyError= function(state,toBuy) {
 Command.prototype.feedError = function(state,toFeed) {
   var cmd = this;
   if(toFeed < 0) return ERRORS.NEGATIVE;
-  if(toFeed > state.bushels) return ERRORS.INSUFFICIENT_BUSHELS;
-  if(toFeed + cmd.plant * gameParams.bushelsToFeedPerson + cmd.buy * state.acresCost > state.bushels) return ERRORS.INSUFFICIENT_BUSHELS_WITH_COMMAND;
+  if(toFeed * gameParams.bushelsToFeedPerson > state.bushels) return ERRORS.INSUFFICIENT_BUSHELS;
+  if(toFeed & gameParams.bushelsToFeedPerson + cmd.plant  + cmd.buy * state.acresCost > state.bushels) return ERRORS.INSUFFICIENT_BUSHELS_WITH_COMMAND;
 }
 
 Command.prototype.plantError = function(state,toPlant) {

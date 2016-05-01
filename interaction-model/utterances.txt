@@ -1,0 +1,864 @@
+
+
+LaunchIntent play a game
+LaunchIntent launch
+LaunchIntent start
+LaunchIntent open
+LaunchIntent manage my kingdom
+LaunchIntent manage my fiefdom
+
+
+BuyIntent buy {acresCnt} acres please
+BuyIntent purchase {acresCnt} acres please
+BuyIntent acquire {acresCnt} acres please
+BuyIntent buy {acresCnt} acres of land please
+BuyIntent purchase {acresCnt} acres of land please
+BuyIntent acquire {acresCnt} acres of land please
+BuyIntent buy {acresCnt} parcels please
+BuyIntent purchase {acresCnt} parcels please
+BuyIntent acquire {acresCnt} parcels please
+BuyIntent buy {acresCnt} parcels of land please
+BuyIntent purchase {acresCnt} parcels of land please
+BuyIntent acquire {acresCnt} parcels of land please
+BuyIntent buy {acresCnt} lots please
+BuyIntent purchase {acresCnt} lots please
+BuyIntent acquire {acresCnt} lots please
+BuyIntent buy {acresCnt} lots of land please
+BuyIntent purchase {acresCnt} lots of land please
+BuyIntent acquire {acresCnt} lots of land please
+BuyIntent buy {acresCnt} plots please
+BuyIntent purchase {acresCnt} plots please
+BuyIntent acquire {acresCnt} plots please
+BuyIntent buy {acresCnt} plots of land please
+BuyIntent purchase {acresCnt} plots of land please
+BuyIntent acquire {acresCnt} plots of land please
+BuyIntent buy {acresCnt} acres
+BuyIntent purchase {acresCnt} acres
+BuyIntent acquire {acresCnt} acres
+BuyIntent buy {acresCnt} acres of land
+BuyIntent purchase {acresCnt} acres of land
+BuyIntent acquire {acresCnt} acres of land
+BuyIntent buy {acresCnt} parcels
+BuyIntent purchase {acresCnt} parcels
+BuyIntent acquire {acresCnt} parcels
+BuyIntent buy {acresCnt} parcels of land
+BuyIntent purchase {acresCnt} parcels of land
+BuyIntent acquire {acresCnt} parcels of land
+BuyIntent buy {acresCnt} lots
+BuyIntent purchase {acresCnt} lots
+BuyIntent acquire {acresCnt} lots
+BuyIntent buy {acresCnt} lots of land
+BuyIntent purchase {acresCnt} lots of land
+BuyIntent acquire {acresCnt} lots of land
+BuyIntent buy {acresCnt} plots
+BuyIntent purchase {acresCnt} plots
+BuyIntent acquire {acresCnt} plots
+BuyIntent buy {acresCnt} plots of land
+BuyIntent purchase {acresCnt} plots of land
+BuyIntent acquire {acresCnt} plots of land
+BuyIntent buy {acresCnt} please
+BuyIntent purchase {acresCnt} please
+BuyIntent acquire {acresCnt} please
+BuyIntent buy {acresCnt}
+BuyIntent purchase {acresCnt}
+BuyIntent acquire {acresCnt}
+
+BuyWithRestIntent buy acres with whats left please
+BuyWithRestIntent purchase acres with whats left please
+BuyWithRestIntent acquire acres with whats left please
+BuyWithRestIntent buy acres of land with whats left please
+BuyWithRestIntent purchase acres of land with whats left please
+BuyWithRestIntent acquire acres of land with whats left please
+BuyWithRestIntent buy parcels with whats left please
+BuyWithRestIntent purchase parcels with whats left please
+BuyWithRestIntent acquire parcels with whats left please
+BuyWithRestIntent buy parcels of land with whats left please
+BuyWithRestIntent purchase parcels of land with whats left please
+BuyWithRestIntent acquire parcels of land with whats left please
+BuyWithRestIntent buy lots with whats left please
+BuyWithRestIntent purchase lots with whats left please
+BuyWithRestIntent acquire lots with whats left please
+BuyWithRestIntent buy lots of land with whats left please
+BuyWithRestIntent purchase lots of land with whats left please
+BuyWithRestIntent acquire lots of land with whats left please
+BuyWithRestIntent buy plots with whats left please
+BuyWithRestIntent purchase plots with whats left please
+BuyWithRestIntent acquire plots with whats left please
+BuyWithRestIntent buy plots of land with whats left please
+BuyWithRestIntent purchase plots of land with whats left please
+BuyWithRestIntent acquire plots of land with whats left please
+BuyWithRestIntent buy acres with whats left
+BuyWithRestIntent purchase acres with whats left
+BuyWithRestIntent acquire acres with whats left
+BuyWithRestIntent buy acres of land with whats left
+BuyWithRestIntent purchase acres of land with whats left
+BuyWithRestIntent acquire acres of land with whats left
+BuyWithRestIntent buy parcels with whats left
+BuyWithRestIntent purchase parcels with whats left
+BuyWithRestIntent acquire parcels with whats left
+BuyWithRestIntent buy parcels of land with whats left
+BuyWithRestIntent purchase parcels of land with whats left
+BuyWithRestIntent acquire parcels of land with whats left
+BuyWithRestIntent buy lots with whats left
+BuyWithRestIntent purchase lots with whats left
+BuyWithRestIntent acquire lots with whats left
+BuyWithRestIntent buy lots of land with whats left
+BuyWithRestIntent purchase lots of land with whats left
+BuyWithRestIntent acquire lots of land with whats left
+BuyWithRestIntent buy plots with whats left
+BuyWithRestIntent purchase plots with whats left
+BuyWithRestIntent acquire plots with whats left
+BuyWithRestIntent buy plots of land with whats left
+BuyWithRestIntent purchase plots of land with whats left
+BuyWithRestIntent acquire plots of land with whats left
+BuyWithRestIntent buy with whats left please
+BuyWithRestIntent purchase with whats left please
+BuyWithRestIntent acquire with whats left please
+BuyWithRestIntent buy with whats left
+BuyWithRestIntent purchase with whats left
+BuyWithRestIntent acquire with whats left
+BuyWithRestIntent use the rest to buy acres please
+BuyWithRestIntent use the rest to buy acres of land please
+BuyWithRestIntent use the rest to buy parcels please
+BuyWithRestIntent use the rest to buy parcels of land please
+BuyWithRestIntent use the rest to buy lots please
+BuyWithRestIntent use the rest to buy lots of land please
+BuyWithRestIntent use the rest to buy plots please
+BuyWithRestIntent use the rest to buy plots of land please
+BuyWithRestIntent use the rest to buy acres
+BuyWithRestIntent use the rest to buy acres of land
+BuyWithRestIntent use the rest to buy parcels
+BuyWithRestIntent use the rest to buy parcels of land
+BuyWithRestIntent use the rest to buy lots
+BuyWithRestIntent use the rest to buy lots of land
+BuyWithRestIntent use the rest to buy plots
+BuyWithRestIntent use the rest to buy plots of land
+BuyWithRestIntent use the rest to buy please
+BuyWithRestIntent use the rest to buy
+
+
+SellIntent sell {acresCnt} acres please
+SellIntent liquidate {acresCnt} acres please
+SellIntent sell {acresCnt} acres of land please
+SellIntent liquidate {acresCnt} acres of land please
+SellIntent sell {acresCnt} parcels please
+SellIntent liquidate {acresCnt} parcels please
+SellIntent sell {acresCnt} parcels of land please
+SellIntent liquidate {acresCnt} parcels of land please
+SellIntent sell {acresCnt} lots please
+SellIntent liquidate {acresCnt} lots please
+SellIntent sell {acresCnt} lots of land please
+SellIntent liquidate {acresCnt} lots of land please
+SellIntent sell {acresCnt} plots please
+SellIntent liquidate {acresCnt} plots please
+SellIntent sell {acresCnt} plots of land please
+SellIntent liquidate {acresCnt} plots of land please
+SellIntent sell {acresCnt} acres
+SellIntent liquidate {acresCnt} acres
+SellIntent sell {acresCnt} acres of land
+SellIntent liquidate {acresCnt} acres of land
+SellIntent sell {acresCnt} parcels
+SellIntent liquidate {acresCnt} parcels
+SellIntent sell {acresCnt} parcels of land
+SellIntent liquidate {acresCnt} parcels of land
+SellIntent sell {acresCnt} lots
+SellIntent liquidate {acresCnt} lots
+SellIntent sell {acresCnt} lots of land
+SellIntent liquidate {acresCnt} lots of land
+SellIntent sell {acresCnt} plots
+SellIntent liquidate {acresCnt} plots
+SellIntent sell {acresCnt} plots of land
+SellIntent liquidate {acresCnt} plots of land
+SellIntent reduce my acres by {acresCnt}
+SellIntent reduce my acres of land by {acresCnt}
+SellIntent reduce my parcels by {acresCnt}
+SellIntent reduce my parcels of land by {acresCnt}
+SellIntent reduce my lots by {acresCnt}
+SellIntent reduce my lots of land by {acresCnt}
+SellIntent reduce my plots by {acresCnt}
+SellIntent reduce my plots of land by {acresCnt}
+SellIntent sell {acresCnt} please
+SellIntent liquidate {acresCnt} please
+SellIntent sell {acresCnt}
+SellIntent liquidate {acresCnt}
+
+
+FeedPeopleIntent feed {peopleCnt} people please
+FeedPeopleIntent give food for {peopleCnt} people please
+FeedPeopleIntent provide for {peopleCnt} people please
+FeedPeopleIntent feed {peopleCnt} subjects please
+FeedPeopleIntent give food for {peopleCnt} subjects please
+FeedPeopleIntent provide for {peopleCnt} subjects please
+FeedPeopleIntent feed {peopleCnt} peasants please
+FeedPeopleIntent give food for {peopleCnt} peasants please
+FeedPeopleIntent provide for {peopleCnt} peasants please
+FeedPeopleIntent feed {peopleCnt} dudes please
+FeedPeopleIntent give food for {peopleCnt} dudes please
+FeedPeopleIntent provide for {peopleCnt} dudes please
+FeedPeopleIntent feed {peopleCnt} guy please
+FeedPeopleIntent give food for {peopleCnt} guy please
+FeedPeopleIntent provide for {peopleCnt} guy please
+FeedPeopleIntent feed {peopleCnt} person please
+FeedPeopleIntent give food for {peopleCnt} person please
+FeedPeopleIntent provide for {peopleCnt} person please
+FeedPeopleIntent feed {peopleCnt} dudes please
+FeedPeopleIntent give food for {peopleCnt} dudes please
+FeedPeopleIntent provide for {peopleCnt} dudes please
+FeedPeopleIntent feed {peopleCnt} gals please
+FeedPeopleIntent give food for {peopleCnt} gals please
+FeedPeopleIntent provide for {peopleCnt} gals please
+FeedPeopleIntent feed {peopleCnt} people
+FeedPeopleIntent give food for {peopleCnt} people
+FeedPeopleIntent provide for {peopleCnt} people
+FeedPeopleIntent feed {peopleCnt} subjects
+FeedPeopleIntent give food for {peopleCnt} subjects
+FeedPeopleIntent provide for {peopleCnt} subjects
+FeedPeopleIntent feed {peopleCnt} peasants
+FeedPeopleIntent give food for {peopleCnt} peasants
+FeedPeopleIntent provide for {peopleCnt} peasants
+FeedPeopleIntent feed {peopleCnt} dudes
+FeedPeopleIntent give food for {peopleCnt} dudes
+FeedPeopleIntent provide for {peopleCnt} dudes
+FeedPeopleIntent feed {peopleCnt} guy
+FeedPeopleIntent give food for {peopleCnt} guy
+FeedPeopleIntent provide for {peopleCnt} guy
+FeedPeopleIntent feed {peopleCnt} person
+FeedPeopleIntent give food for {peopleCnt} person
+FeedPeopleIntent provide for {peopleCnt} person
+FeedPeopleIntent feed {peopleCnt} dudes
+FeedPeopleIntent give food for {peopleCnt} dudes
+FeedPeopleIntent provide for {peopleCnt} dudes
+FeedPeopleIntent feed {peopleCnt} gals
+FeedPeopleIntent give food for {peopleCnt} gals
+FeedPeopleIntent provide for {peopleCnt} gals
+FeedPeopleIntent let {peopleCnt} people live please
+FeedPeopleIntent let {peopleCnt} subjects live please
+FeedPeopleIntent let {peopleCnt} peasants live please
+FeedPeopleIntent let {peopleCnt} dudes live please
+FeedPeopleIntent let {peopleCnt} guy live please
+FeedPeopleIntent let {peopleCnt} person live please
+FeedPeopleIntent let {peopleCnt} dudes live please
+FeedPeopleIntent let {peopleCnt} gals live please
+FeedPeopleIntent let {peopleCnt} people live
+FeedPeopleIntent let {peopleCnt} subjects live
+FeedPeopleIntent let {peopleCnt} peasants live
+FeedPeopleIntent let {peopleCnt} dudes live
+FeedPeopleIntent let {peopleCnt} guy live
+FeedPeopleIntent let {peopleCnt} person live
+FeedPeopleIntent let {peopleCnt} dudes live
+FeedPeopleIntent let {peopleCnt} gals live
+
+FeedEveryoneIntent feed everyone please
+FeedEveryoneIntent feed everyone
+FeedEveryoneIntent feed everybody please
+FeedEveryoneIntent feed everybody
+FeedEveryoneIntent feed all my people please
+FeedEveryoneIntent feed all my subjects please
+FeedEveryoneIntent feed all my peasants please
+FeedEveryoneIntent feed all my dudes please
+FeedEveryoneIntent feed all my guy please
+FeedEveryoneIntent feed all my person please
+FeedEveryoneIntent feed all my dudes please
+FeedEveryoneIntent feed all my gals please
+FeedEveryoneIntent feed all my people
+FeedEveryoneIntent feed all my subjects
+FeedEveryoneIntent feed all my peasants
+FeedEveryoneIntent feed all my dudes
+FeedEveryoneIntent feed all my guy
+FeedEveryoneIntent feed all my person
+FeedEveryoneIntent feed all my dudes
+FeedEveryoneIntent feed all my gals
+FeedEveryoneIntent feed all the people please
+FeedEveryoneIntent feed all the subjects please
+FeedEveryoneIntent feed all the peasants please
+FeedEveryoneIntent feed all the dudes please
+FeedEveryoneIntent feed all the guy please
+FeedEveryoneIntent feed all the person please
+FeedEveryoneIntent feed all the dudes please
+FeedEveryoneIntent feed all the gals please
+FeedEveryoneIntent feed all the people
+FeedEveryoneIntent feed all the subjects
+FeedEveryoneIntent feed all the peasants
+FeedEveryoneIntent feed all the dudes
+FeedEveryoneIntent feed all the guy
+FeedEveryoneIntent feed all the person
+FeedEveryoneIntent feed all the dudes
+FeedEveryoneIntent feed all the gals
+FeedEveryoneIntent feed with the rest please
+FeedEveryoneIntent feed with the rest
+FeedEveryoneIntent use the rest to feed please
+FeedEveryoneIntent use the rest to feed
+FeedEveryoneIntent feed my people please
+FeedEveryoneIntent feed my subjects please
+FeedEveryoneIntent feed my peasants please
+FeedEveryoneIntent feed my dudes please
+FeedEveryoneIntent feed my guy please
+FeedEveryoneIntent feed my person please
+FeedEveryoneIntent feed my dudes please
+FeedEveryoneIntent feed my gals please
+FeedEveryoneIntent feed my people
+FeedEveryoneIntent feed my subjects
+FeedEveryoneIntent feed my peasants
+FeedEveryoneIntent feed my dudes
+FeedEveryoneIntent feed my guy
+FeedEveryoneIntent feed my person
+FeedEveryoneIntent feed my dudes
+FeedEveryoneIntent feed my gals
+
+FeedNoOneIntent feed none of my people
+FeedNoOneIntent feed none of my subjects
+FeedNoOneIntent feed none of my peasants
+FeedNoOneIntent feed none of my dudes
+FeedNoOneIntent feed none of my guy
+FeedNoOneIntent feed none of my person
+FeedNoOneIntent feed none of my dudes
+FeedNoOneIntent feed none of my gals
+FeedNoOneIntent feed no people
+FeedNoOneIntent feed no subjects
+FeedNoOneIntent feed no peasants
+FeedNoOneIntent feed no dudes
+FeedNoOneIntent feed no guy
+FeedNoOneIntent feed no person
+FeedNoOneIntent feed no dudes
+FeedNoOneIntent feed no gals
+FeedNoOneIntent feed no one
+FeedNoOneIntent feed none of the people
+FeedNoOneIntent feed none of the subjects
+FeedNoOneIntent feed none of the peasants
+FeedNoOneIntent feed none of the dudes
+FeedNoOneIntent feed none of the guy
+FeedNoOneIntent feed none of the person
+FeedNoOneIntent feed none of the dudes
+FeedNoOneIntent feed none of the gals
+FeedNoOneIntent let them starve
+FeedNoOneIntent starve them
+FeedNoOneIntent starve my people
+FeedNoOneIntent starve my subjects
+FeedNoOneIntent starve my peasants
+FeedNoOneIntent starve my dudes
+FeedNoOneIntent starve my guy
+FeedNoOneIntent starve my person
+FeedNoOneIntent starve my dudes
+FeedNoOneIntent starve my gals
+FeedNoOneIntent starve people
+FeedNoOneIntent starve subjects
+FeedNoOneIntent starve peasants
+FeedNoOneIntent starve dudes
+FeedNoOneIntent starve guy
+FeedNoOneIntent starve person
+FeedNoOneIntent starve dudes
+FeedNoOneIntent starve gals
+FeedNoOneIntent starve everyone
+FeedNoOneIntent starve the people
+FeedNoOneIntent starve the subjects
+FeedNoOneIntent starve the peasants
+FeedNoOneIntent starve the dudes
+FeedNoOneIntent starve the guy
+FeedNoOneIntent starve the person
+FeedNoOneIntent starve the dudes
+FeedNoOneIntent starve the gals
+
+
+PlantIntent plant {plantCnt} acres please
+PlantIntent sow {plantCnt} acres please
+PlantIntent seed {plantCnt} acres please
+PlantIntent plant {plantCnt} acres of land please
+PlantIntent sow {plantCnt} acres of land please
+PlantIntent seed {plantCnt} acres of land please
+PlantIntent plant {plantCnt} parcels please
+PlantIntent sow {plantCnt} parcels please
+PlantIntent seed {plantCnt} parcels please
+PlantIntent plant {plantCnt} parcels of land please
+PlantIntent sow {plantCnt} parcels of land please
+PlantIntent seed {plantCnt} parcels of land please
+PlantIntent plant {plantCnt} lots please
+PlantIntent sow {plantCnt} lots please
+PlantIntent seed {plantCnt} lots please
+PlantIntent plant {plantCnt} lots of land please
+PlantIntent sow {plantCnt} lots of land please
+PlantIntent seed {plantCnt} lots of land please
+PlantIntent plant {plantCnt} plots please
+PlantIntent sow {plantCnt} plots please
+PlantIntent seed {plantCnt} plots please
+PlantIntent plant {plantCnt} plots of land please
+PlantIntent sow {plantCnt} plots of land please
+PlantIntent seed {plantCnt} plots of land please
+PlantIntent plant {plantCnt} acres
+PlantIntent sow {plantCnt} acres
+PlantIntent seed {plantCnt} acres
+PlantIntent plant {plantCnt} acres of land
+PlantIntent sow {plantCnt} acres of land
+PlantIntent seed {plantCnt} acres of land
+PlantIntent plant {plantCnt} parcels
+PlantIntent sow {plantCnt} parcels
+PlantIntent seed {plantCnt} parcels
+PlantIntent plant {plantCnt} parcels of land
+PlantIntent sow {plantCnt} parcels of land
+PlantIntent seed {plantCnt} parcels of land
+PlantIntent plant {plantCnt} lots
+PlantIntent sow {plantCnt} lots
+PlantIntent seed {plantCnt} lots
+PlantIntent plant {plantCnt} lots of land
+PlantIntent sow {plantCnt} lots of land
+PlantIntent seed {plantCnt} lots of land
+PlantIntent plant {plantCnt} plots
+PlantIntent sow {plantCnt} plots
+PlantIntent seed {plantCnt} plots
+PlantIntent plant {plantCnt} plots of land
+PlantIntent sow {plantCnt} plots of land
+PlantIntent seed {plantCnt} plots of land
+PlantIntent plant {plantCnt} please
+PlantIntent sow {plantCnt} please
+PlantIntent seed {plantCnt} please
+PlantIntent plant {plantCnt}
+PlantIntent sow {plantCnt}
+PlantIntent seed {plantCnt}
+PlantIntent plant {plantCnt} bushels please
+PlantIntent sow {plantCnt} bushels please
+PlantIntent seed {plantCnt} bushels please
+PlantIntent plant {plantCnt} bushels
+PlantIntent sow {plantCnt} bushels
+PlantIntent seed {plantCnt} bushels
+
+PlantAllIntent plant all of them
+PlantAllIntent sow all of them
+PlantAllIntent seed all of them
+PlantAllIntent plant all of acres
+PlantAllIntent sow all of acres
+PlantAllIntent seed all of acres
+PlantAllIntent plant all of acres of land
+PlantAllIntent sow all of acres of land
+PlantAllIntent seed all of acres of land
+PlantAllIntent plant all of parcels
+PlantAllIntent sow all of parcels
+PlantAllIntent seed all of parcels
+PlantAllIntent plant all of parcels of land
+PlantAllIntent sow all of parcels of land
+PlantAllIntent seed all of parcels of land
+PlantAllIntent plant all of lots
+PlantAllIntent sow all of lots
+PlantAllIntent seed all of lots
+PlantAllIntent plant all of lots of land
+PlantAllIntent sow all of lots of land
+PlantAllIntent seed all of lots of land
+PlantAllIntent plant all of plots
+PlantAllIntent sow all of plots
+PlantAllIntent seed all of plots
+PlantAllIntent plant all of plots of land
+PlantAllIntent sow all of plots of land
+PlantAllIntent seed all of plots of land
+PlantAllIntent plant all of my acres
+PlantAllIntent sow all of my acres
+PlantAllIntent seed all of my acres
+PlantAllIntent plant all of my acres of land
+PlantAllIntent sow all of my acres of land
+PlantAllIntent seed all of my acres of land
+PlantAllIntent plant all of my parcels
+PlantAllIntent sow all of my parcels
+PlantAllIntent seed all of my parcels
+PlantAllIntent plant all of my parcels of land
+PlantAllIntent sow all of my parcels of land
+PlantAllIntent seed all of my parcels of land
+PlantAllIntent plant all of my lots
+PlantAllIntent sow all of my lots
+PlantAllIntent seed all of my lots
+PlantAllIntent plant all of my lots of land
+PlantAllIntent sow all of my lots of land
+PlantAllIntent seed all of my lots of land
+PlantAllIntent plant all of my plots
+PlantAllIntent sow all of my plots
+PlantAllIntent seed all of my plots
+PlantAllIntent plant all of my plots of land
+PlantAllIntent sow all of my plots of land
+PlantAllIntent seed all of my plots of land
+PlantAllIntent use the rest to plant
+PlantAllIntent use the rest to sow
+PlantAllIntent use the rest to seed
+PlantAllIntent plant everything
+PlantAllIntent sow everything
+PlantAllIntent seed everything
+PlantAllIntent plant with the rest
+PlantAllIntent sow with the rest
+PlantAllIntent seed with the rest
+
+AMAZON.RepeatIntent what's my status
+AMAZON.RepeatIntent what is my status
+AMAZON.RepeatIntent report
+AMAZON.RepeatIntent survey
+AMAZON.RepeatIntent survey my lands
+AMAZON.RepeatIntent repeat
+AMAZON.RepeatIntent say that again
+
+CommandIntent what am I doing
+CommandIntent what am I doing again
+CommandIntent how much am I planting
+CommandIntent how much am I sowing
+CommandIntent how much am I seeding
+CommandIntent how much am I buying
+CommandIntent how much am I purchaseing
+CommandIntent how much am I acquireing
+CommandIntent how much am I selling
+CommandIntent how much am I liquidateing
+CommandIntent how much am I feeding
+CommandIntent how much am I give food foring
+CommandIntent how much am I provide foring
+CommandIntent how many acres am I planting
+CommandIntent how many acres of land am I planting
+CommandIntent how many parcels am I planting
+CommandIntent how many parcels of land am I planting
+CommandIntent how many lots am I planting
+CommandIntent how many lots of land am I planting
+CommandIntent how many plots am I planting
+CommandIntent how many plots of land am I planting
+CommandIntent how many acres am I sowing
+CommandIntent how many acres of land am I sowing
+CommandIntent how many parcels am I sowing
+CommandIntent how many parcels of land am I sowing
+CommandIntent how many lots am I sowing
+CommandIntent how many lots of land am I sowing
+CommandIntent how many plots am I sowing
+CommandIntent how many plots of land am I sowing
+CommandIntent how many acres am I seeding
+CommandIntent how many acres of land am I seeding
+CommandIntent how many parcels am I seeding
+CommandIntent how many parcels of land am I seeding
+CommandIntent how many lots am I seeding
+CommandIntent how many lots of land am I seeding
+CommandIntent how many plots am I seeding
+CommandIntent how many plots of land am I seeding
+CommandIntent how many acres am I buying
+CommandIntent how many acres of land am I buying
+CommandIntent how many parcels am I buying
+CommandIntent how many parcels of land am I buying
+CommandIntent how many lots am I buying
+CommandIntent how many lots of land am I buying
+CommandIntent how many plots am I buying
+CommandIntent how many plots of land am I buying
+CommandIntent how many acres am I purchaseing
+CommandIntent how many acres of land am I purchaseing
+CommandIntent how many parcels am I purchaseing
+CommandIntent how many parcels of land am I purchaseing
+CommandIntent how many lots am I purchaseing
+CommandIntent how many lots of land am I purchaseing
+CommandIntent how many plots am I purchaseing
+CommandIntent how many plots of land am I purchaseing
+CommandIntent how many acres am I acquireing
+CommandIntent how many acres of land am I acquireing
+CommandIntent how many parcels am I acquireing
+CommandIntent how many parcels of land am I acquireing
+CommandIntent how many lots am I acquireing
+CommandIntent how many lots of land am I acquireing
+CommandIntent how many plots am I acquireing
+CommandIntent how many plots of land am I acquireing
+CommandIntent how many acres am I selling
+CommandIntent how many acres of land am I selling
+CommandIntent how many parcels am I selling
+CommandIntent how many parcels of land am I selling
+CommandIntent how many lots am I selling
+CommandIntent how many lots of land am I selling
+CommandIntent how many plots am I selling
+CommandIntent how many plots of land am I selling
+CommandIntent how many acres am I liquidateing
+CommandIntent how many acres of land am I liquidateing
+CommandIntent how many parcels am I liquidateing
+CommandIntent how many parcels of land am I liquidateing
+CommandIntent how many lots am I liquidateing
+CommandIntent how many lots of land am I liquidateing
+CommandIntent how many plots am I liquidateing
+CommandIntent how many plots of land am I liquidateing
+CommandIntent how many people am I feeding
+CommandIntent how many subjects am I feeding
+CommandIntent how many peasants am I feeding
+CommandIntent how many dudes am I feeding
+CommandIntent how many guy am I feeding
+CommandIntent how many person am I feeding
+CommandIntent how many dudes am I feeding
+CommandIntent how many gals am I feeding
+CommandIntent how many people am I give food foring
+CommandIntent how many subjects am I give food foring
+CommandIntent how many peasants am I give food foring
+CommandIntent how many dudes am I give food foring
+CommandIntent how many guy am I give food foring
+CommandIntent how many person am I give food foring
+CommandIntent how many dudes am I give food foring
+CommandIntent how many gals am I give food foring
+CommandIntent how many people am I provide foring
+CommandIntent how many subjects am I provide foring
+CommandIntent how many peasants am I provide foring
+CommandIntent how many dudes am I provide foring
+CommandIntent how many guy am I provide foring
+CommandIntent how many person am I provide foring
+CommandIntent how many dudes am I provide foring
+CommandIntent how many gals am I provide foring
+
+NextYearIntent that's it
+NextYearIntent next year
+NextYearIntent go to next year
+NextYearIntent what happens next
+NextYearIntent see what happens next
+NextYearIntent iterate
+NextYearIntent end the year
+
+AMAZON.HelpIntent about this skill
+AMAZON.HelpIntent about this skill please
+AMAZON.HelpIntent explain this skill
+AMAZON.HelpIntent explain this skill please
+AMAZON.HelpIntent explain yourself
+AMAZON.HelpIntent explain yourself please
+AMAZON.HelpIntent get help
+AMAZON.HelpIntent get help please
+AMAZON.HelpIntent help
+AMAZON.HelpIntent help me
+AMAZON.HelpIntent help me please
+AMAZON.HelpIntent help menu
+AMAZON.HelpIntent help menu please
+AMAZON.HelpIntent help options
+AMAZON.HelpIntent help options please
+AMAZON.HelpIntent help please
+AMAZON.HelpIntent how can i use you
+AMAZON.HelpIntent how do i do this
+AMAZON.HelpIntent how do i do this skill
+AMAZON.HelpIntent how do i navigate
+AMAZON.HelpIntent how do i use this
+AMAZON.HelpIntent how do i use this skill
+AMAZON.HelpIntent how do i use you
+AMAZON.HelpIntent how do you do this
+AMAZON.HelpIntent how do you do this skill
+AMAZON.HelpIntent how do you use this
+AMAZON.HelpIntent how do you use this skill
+AMAZON.HelpIntent how do you work
+AMAZON.HelpIntent how does it work
+AMAZON.HelpIntent how does this skill work
+AMAZON.HelpIntent how does this work
+AMAZON.HelpIntent i don't understand
+AMAZON.HelpIntent i'm confused
+AMAZON.HelpIntent open the help menu
+AMAZON.HelpIntent open the help menu please
+AMAZON.HelpIntent please get help
+AMAZON.HelpIntent please help
+AMAZON.HelpIntent please help me
+AMAZON.HelpIntent please offer help options
+AMAZON.HelpIntent please open the help menu
+AMAZON.HelpIntent please take me to the help menu
+AMAZON.HelpIntent please tell me about this skill
+AMAZON.HelpIntent please tell me about this skill
+AMAZON.HelpIntent please tell me help options
+AMAZON.HelpIntent please tell me how can i use you
+AMAZON.HelpIntent please tell me how do i do this
+AMAZON.HelpIntent please tell me how do i do this skill
+AMAZON.HelpIntent please tell me how do i navigate
+AMAZON.HelpIntent please tell me how do i use this
+AMAZON.HelpIntent please tell me how do i use this skill
+AMAZON.HelpIntent please tell me how do i use you
+AMAZON.HelpIntent please tell me how do you do this
+AMAZON.HelpIntent please tell me how do you do this skill
+AMAZON.HelpIntent please tell me how do you use this
+AMAZON.HelpIntent please tell me how do you use this skill
+AMAZON.HelpIntent please tell me how do you work
+AMAZON.HelpIntent please tell me how does it work
+AMAZON.HelpIntent please tell me how does this skill work
+AMAZON.HelpIntent please tell me how does this work
+AMAZON.HelpIntent please tell me more about this skill
+AMAZON.HelpIntent please tell me what am i supposed to do now
+AMAZON.HelpIntent please tell me what can i ask
+AMAZON.HelpIntent please tell me what can i ask you
+AMAZON.HelpIntent please tell me what can i do
+AMAZON.HelpIntent please tell me what can i say
+AMAZON.HelpIntent please tell me what can i use this for
+AMAZON.HelpIntent please tell me what can you do
+AMAZON.HelpIntent please tell me what can you tell me
+AMAZON.HelpIntent please tell me what commands can i ask
+AMAZON.HelpIntent please tell me what commands can i say
+AMAZON.HelpIntent please tell me what do i do
+AMAZON.HelpIntent please tell me what do i do next
+AMAZON.HelpIntent please tell me what do you do
+AMAZON.HelpIntent please tell me what questions can i ask
+AMAZON.HelpIntent please tell more more about what I can do
+AMAZON.HelpIntent tell me about this skill
+AMAZON.HelpIntent tell me about this skill please
+AMAZON.HelpIntent tell me how can i use you
+AMAZON.HelpIntent tell me how can i use you please
+AMAZON.HelpIntent tell me how do i do this
+AMAZON.HelpIntent tell me how do i do this please
+AMAZON.HelpIntent tell me how do i do this skill
+AMAZON.HelpIntent tell me how do i do this skill please
+AMAZON.HelpIntent tell me how do i navigate
+AMAZON.HelpIntent tell me how do i navigate please
+AMAZON.HelpIntent tell me how do i use this
+AMAZON.HelpIntent tell me how do i use this please
+AMAZON.HelpIntent tell me how do i use this skill
+AMAZON.HelpIntent tell me how do i use this skill please
+AMAZON.HelpIntent tell me how do i use you
+AMAZON.HelpIntent tell me how do i use you please
+AMAZON.HelpIntent tell me how do you do this
+AMAZON.HelpIntent tell me how do you do this please
+AMAZON.HelpIntent tell me how do you do this skill
+AMAZON.HelpIntent tell me how do you do this skill please
+AMAZON.HelpIntent tell me how do you use this
+AMAZON.HelpIntent tell me how do you use this please
+AMAZON.HelpIntent tell me how do you use this skill
+AMAZON.HelpIntent tell me how do you use this skill please
+AMAZON.HelpIntent tell me how do you work
+AMAZON.HelpIntent tell me how do you work please
+AMAZON.HelpIntent tell me how does it work
+AMAZON.HelpIntent tell me how does it work please
+AMAZON.HelpIntent tell me how does this skill work
+AMAZON.HelpIntent tell me how does this skill work please
+AMAZON.HelpIntent tell me how does this work
+AMAZON.HelpIntent tell me how does this work please
+AMAZON.HelpIntent tell me more about this skill
+AMAZON.HelpIntent tell me more about this skill please
+AMAZON.HelpIntent tell more more about what I can do
+AMAZON.HelpIntent tell more more about what I can do please
+AMAZON.HelpIntent what am i supposed to do now
+AMAZON.HelpIntent what can i ask
+AMAZON.HelpIntent what can i ask you
+AMAZON.HelpIntent what can i do
+AMAZON.HelpIntent what can i say
+AMAZON.HelpIntent what can i use this for
+AMAZON.HelpIntent what can you do
+AMAZON.HelpIntent what can you tell me
+AMAZON.HelpIntent what commands can i ask
+AMAZON.HelpIntent what commands can i say
+AMAZON.HelpIntent what do i do
+AMAZON.HelpIntent what do i do next
+AMAZON.HelpIntent what do you do
+AMAZON.HelpIntent what questions can i ask
+AMAZON.HelpIntent learn more about this skill
+AMAZON.HelpIntent teach me more about this skill
+
+AMAZON.CancelIntent cancel
+AMAZON.CancelIntent never mind
+AMAZON.CancelIntent forget it
+AMAZON.CancelIntent cancel please
+AMAZON.CancelIntent cancel that
+AMAZON.CancelIntent cancel that please
+
+AMAZON.StopIntent all done
+AMAZON.StopIntent close
+AMAZON.StopIntent complete
+AMAZON.StopIntent done
+AMAZON.StopIntent end
+AMAZON.StopIntent end please
+AMAZON.StopIntent exit
+AMAZON.StopIntent exit please
+AMAZON.StopIntent finished
+AMAZON.StopIntent goodbye
+AMAZON.StopIntent i am done
+AMAZON.StopIntent i'm done
+AMAZON.StopIntent no more
+AMAZON.StopIntent no more please
+AMAZON.StopIntent please close
+AMAZON.StopIntent please end
+AMAZON.StopIntent please stop
+AMAZON.StopIntent stop
+AMAZON.StopIntent stop please
+AMAZON.StopIntent that's all
+AMAZON.StopIntent that's it
+AMAZON.StopIntent the end
+AMAZON.StopIntent we're done
+AMAZON.StopIntent we're done here
+AMAZON.StopIntent good night
+AMAZON.StopIntent neither
+AMAZON.StopIntent abandon my kingdom
+AMAZON.StopIntent walk away from it all
+
+AMAZON.YesIntent absolutely
+AMAZON.YesIntent affirmative
+AMAZON.YesIntent all right
+AMAZON.YesIntent all righty
+AMAZON.YesIntent amen
+AMAZON.YesIntent aye aye
+AMAZON.YesIntent bring it
+AMAZON.YesIntent bring it on
+AMAZON.YesIntent by all means
+AMAZON.YesIntent check
+AMAZON.YesIntent cool
+AMAZON.YesIntent definitely
+AMAZON.YesIntent do it
+AMAZON.YesIntent exactly
+AMAZON.YesIntent fine
+AMAZON.YesIntent for real
+AMAZON.YesIntent for sure
+AMAZON.YesIntent gladly
+AMAZON.YesIntent go for it
+AMAZON.YesIntent good
+AMAZON.YesIntent hell ya
+AMAZON.YesIntent hell yea
+AMAZON.YesIntent hells yes
+AMAZON.YesIntent i sure am
+AMAZON.YesIntent naturally
+AMAZON.YesIntent of course
+AMAZON.YesIntent oh yeah
+AMAZON.YesIntent okay
+AMAZON.YesIntent please
+AMAZON.YesIntent positively
+AMAZON.YesIntent right on
+AMAZON.YesIntent roger
+AMAZON.YesIntent sure
+AMAZON.YesIntent sure sounds good
+AMAZON.YesIntent sure thing
+AMAZON.YesIntent thanks
+AMAZON.YesIntent uh huh
+AMAZON.YesIntent very well
+AMAZON.YesIntent yea
+AMAZON.YesIntent yeah
+AMAZON.YesIntent yep
+AMAZON.YesIntent yeppers
+AMAZON.YesIntent yes
+AMAZON.YesIntent yes confirm
+AMAZON.YesIntent yes confirm that
+AMAZON.YesIntent yes i accept
+AMAZON.YesIntent yes i confirm
+AMAZON.YesIntent yes I'd like that
+AMAZON.YesIntent yes please
+AMAZON.YesIntent yes way
+AMAZON.YesIntent yes you can
+AMAZON.YesIntent yes you may
+AMAZON.YesIntent yessum
+AMAZON.YesIntent you bet
+AMAZON.YesIntent you know it
+AMAZON.YesIntent yup
+AMAZON.NoIntent absolutely not
+AMAZON.NoIntent afraid not
+AMAZON.NoIntent by no means
+AMAZON.NoIntent don't
+AMAZON.NoIntent don't do that
+AMAZON.NoIntent hell no
+AMAZON.NoIntent i don't think so
+AMAZON.NoIntent i don't want that
+AMAZON.NoIntent i'd better not
+AMAZON.NoIntent i'm afraid not
+AMAZON.NoIntent maybe another time
+AMAZON.NoIntent nah
+AMAZON.NoIntent negative
+AMAZON.NoIntent negatory
+AMAZON.NoIntent negatron
+AMAZON.NoIntent never
+AMAZON.NoIntent nix
+AMAZON.NoIntent no
+AMAZON.NoIntent no don't remove it
+AMAZON.NoIntent no don't remove it please
+AMAZON.NoIntent no keep it
+AMAZON.NoIntent no keep it please
+AMAZON.NoIntent no let's keep it
+AMAZON.NoIntent no let's keep it please
+AMAZON.NoIntent no thank you
+AMAZON.NoIntent no thanks
+AMAZON.NoIntent no way
+AMAZON.NoIntent nope
+AMAZON.NoIntent not at all
+AMAZON.NoIntent not by any means
+AMAZON.NoIntent not ever
+AMAZON.NoIntent not now
+AMAZON.NoIntent not right now
+AMAZON.NoIntent not this time
+AMAZON.NoIntent thanks but no thanks
+AMAZON.NoIntent that's a bad idea
+AMAZON.NoIntent unfortunately not
+
+AMAZON.StartOverIntent start over
+AMAZON.StartOverIntent restart
+AMAZON.StartOverIntent start again
+AMAZON.StartOverIntent play another game
+AMAZON.StartOverIntent try again

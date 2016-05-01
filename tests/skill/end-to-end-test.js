@@ -36,18 +36,18 @@ describe('end to end',function(){
     assert.equal(res.sessionAttributes.game.year,1);
   });
 
+  itIs('buy-with-rest',function(res){
+    assert.match(res.response.outputSpeech.ssml,/With the rest of your bushels, you buy 164 acres./i);
+    assert.equal(res.sessionAttributes.state,'query-action');
+    assert.equal(res.sessionAttributes.command.buy,164);
+    assert.equal(res.sessionAttributes.game.year,1);
+  });
+
   itIs('sell-error-acres-with-command',function(res){
     assert.match(res.response.outputSpeech.ssml,/planting 999 acres/i);
     assert.equal(res.sessionAttributes.state,'query-action');
     assert.notOk(res.sessionAttributes.command.buy);
     assert.equal(res.sessionAttributes.command.plant,999);
-    assert.equal(res.sessionAttributes.game.year,1);
-  });
-
-  itIs('plant-error-bushels-with-command',function(res){
-    assert.match(res.response.outputSpeech.ssml,/800 bushels/i);
-    assert.equal(res.sessionAttributes.state,'query-action');
-    assert.notOk(res.sessionAttributes.command.plant);
     assert.equal(res.sessionAttributes.game.year,1);
   });
 
@@ -60,6 +60,52 @@ describe('end to end',function(){
   itIs('end-game-revolt',function(res){
     assert.match(res.response.outputSpeech.ssml,/YOU STARVED 100 PEOPLE IN ONE YEAR!/i);
   });
+
+  itIs('plant/error-bushels-with-command',function(res){
+    assert.match(res.response.outputSpeech.ssml,/800 bushels/i);
+    assert.equal(res.sessionAttributes.state,'query-action');
+    assert.notOk(res.sessionAttributes.command.plant);
+    assert.equal(res.sessionAttributes.game.year,1);
+  });
+
+  itIs('plant/all-acres-limited',function(res){
+    assert.equal(res.sessionAttributes.command.plant,1000);
+    assert.match(res.response.outputSpeech.ssml,/You're planting all 1000 acres and have 1800 bushels/i);
+  });
+
+  itIs('plant/all-bushels-limited',function(res){
+    assert.equal(res.sessionAttributes.command.plant,500);
+    assert.match(res.response.outputSpeech.ssml,/With the rest of your bushels, you plant 500 acres/i);
+  });
+
+  itIs('plant/all-workers-limited',function(res){
+    assert.equal(res.sessionAttributes.command.plant,200);
+    assert.match(res.response.outputSpeech.ssml,/You plant 200 acres/);
+    assert.match(res.response.outputSpeech.ssml,/most you can work with 20 people/);
+    assert.match(res.response.outputSpeech.ssml,/you have 2600 bushels left/i);
+  });
+
+  itIs('plant/nothing',function(res){
+    assert.equal(res.sessionAttributes.command.plant,0);
+    assert.match(res.response.outputSpeech.ssml,/You plant nothing. I fear/);
+  });
+
+  itIs('query/action',function(res){
+    assert.match(res.response.outputSpeech.ssml,/You're buying 2 acres/i);
+    assert.match(res.response.outputSpeech.ssml,/You're planting 20 acres/i);
+    assert.match(res.response.outputSpeech.ssml,/You're feeding 20 people/i);
+    assert.match(res.response.outputSpeech.ssml,/2340/i);
+  });
+
+  itIs('query/population',function(res){
+    assert.match(res.response.outputSpeech.ssml,/You have 100 people in your kingdom/i);
+  });
+
+  itIs('query/acres-cost',function(res){
+    assert.match(res.response.outputSpeech.ssml,/Land costs 20 bushels per acre/i);
+    assert.match(res.response.outputSpeech.ssml,/You can afford to buy up to 140 acres/i);
+  });
+
 
   function itIs(requestFile, cb) {
     it(requestFile,function(done){
