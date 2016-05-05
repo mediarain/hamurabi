@@ -6,6 +6,10 @@ var _ = require('lodash')
   , gameParams = require('../config').game
   ;
 
+exports.accident = function(game,cmd) {
+  return _.sample(['fire','earthquake','hurricane','tornado','tsunami','alien invasion','mole men attack']);
+}
+
 exports.mostCanBuyAcres = function(game,cmd) {
   return lang.quantify(cmd.mostCanBuy(game),'acre');
 }

@@ -37,8 +37,10 @@ BuyIntent [buy] {acresCnt} [PLEASE]
 
 BuyWithRestIntent [buy] [acres] with whats left [PLEASE]
 BuyWithRestIntent [buy] with whats left [PLEASE]
+BuyWithRestIntent [buy] with the rest
 BuyWithRestIntent use the rest to buy [acres] [PLEASE]
 BuyWithRestIntent use the rest to buy [PLEASE]
+BuyWithRestIntent [buy] every [acres] possible
 
 [sell] sell
 [sell] liquidate
@@ -90,10 +92,12 @@ PlantAllIntent [plant] all of my [acres]
 PlantAllIntent use the rest to [plant]
 PlantAllIntent [plant] everything
 PlantAllIntent [plant] with the rest
+PlantAllIntent [plant] food
+PlantAllIntent [plant]
 
 PlantNothingIntent [plant] nothing
 PlantNothingIntent [plant] no [acres]
-PlantNothingIntent [plant] no [bushels]
+PlantNothingIntent [plant] no bushels
 
 AMAZON.RepeatIntent what's my status
 AMAZON.RepeatIntent what is my status
@@ -138,14 +142,22 @@ NextYearIntent that's it
 NextYearIntent that's all
 NextYearIntent done
 NextYearIntent I'm done
+NextYearIntent all done
 NextYearIntent next year
 NextYearIntent go to next year
 NextYearIntent what happens next
 NextYearIntent see what happens next
 NextYearIntent iterate
 NextYearIntent end the year
+NextYearIntent nothing
+NextYearIntent nothing else
+NextYearIntent nada
+NextYearIntent pass
+NextYearIntent move on
 
 AMAZON.HelpIntent [HELP]
+AMAZON.HelpIntent do i have to feed my people
+AMAZON.HelpIntent how do i plant food
 
 AMAZON.CancelIntent [CANCEL]
 

@@ -1,11 +1,15 @@
 
 
+
 LaunchIntent play a game
 LaunchIntent launch
 LaunchIntent start
 LaunchIntent open
 LaunchIntent manage my kingdom
 LaunchIntent manage my fiefdom
+LaunchIntent manage my city
+LaunchIntent manage my realm
+LaunchIntent manage my domain
 
 
 BuyIntent buy {acresCnt} acres please
@@ -195,9 +199,6 @@ FeedPeopleIntent provide for {peopleCnt} peasants please
 FeedPeopleIntent feed {peopleCnt} dudes please
 FeedPeopleIntent give food for {peopleCnt} dudes please
 FeedPeopleIntent provide for {peopleCnt} dudes please
-FeedPeopleIntent feed {peopleCnt} guy please
-FeedPeopleIntent give food for {peopleCnt} guy please
-FeedPeopleIntent provide for {peopleCnt} guy please
 FeedPeopleIntent feed {peopleCnt} person please
 FeedPeopleIntent give food for {peopleCnt} person please
 FeedPeopleIntent provide for {peopleCnt} person please
@@ -207,6 +208,9 @@ FeedPeopleIntent provide for {peopleCnt} dudes please
 FeedPeopleIntent feed {peopleCnt} gals please
 FeedPeopleIntent give food for {peopleCnt} gals please
 FeedPeopleIntent provide for {peopleCnt} gals please
+FeedPeopleIntent feed {peopleCnt} serfs please
+FeedPeopleIntent give food for {peopleCnt} serfs please
+FeedPeopleIntent provide for {peopleCnt} serfs please
 FeedPeopleIntent feed {peopleCnt} people
 FeedPeopleIntent give food for {peopleCnt} people
 FeedPeopleIntent provide for {peopleCnt} people
@@ -219,9 +223,6 @@ FeedPeopleIntent provide for {peopleCnt} peasants
 FeedPeopleIntent feed {peopleCnt} dudes
 FeedPeopleIntent give food for {peopleCnt} dudes
 FeedPeopleIntent provide for {peopleCnt} dudes
-FeedPeopleIntent feed {peopleCnt} guy
-FeedPeopleIntent give food for {peopleCnt} guy
-FeedPeopleIntent provide for {peopleCnt} guy
 FeedPeopleIntent feed {peopleCnt} person
 FeedPeopleIntent give food for {peopleCnt} person
 FeedPeopleIntent provide for {peopleCnt} person
@@ -231,22 +232,25 @@ FeedPeopleIntent provide for {peopleCnt} dudes
 FeedPeopleIntent feed {peopleCnt} gals
 FeedPeopleIntent give food for {peopleCnt} gals
 FeedPeopleIntent provide for {peopleCnt} gals
+FeedPeopleIntent feed {peopleCnt} serfs
+FeedPeopleIntent give food for {peopleCnt} serfs
+FeedPeopleIntent provide for {peopleCnt} serfs
 FeedPeopleIntent let {peopleCnt} people live please
 FeedPeopleIntent let {peopleCnt} subjects live please
 FeedPeopleIntent let {peopleCnt} peasants live please
 FeedPeopleIntent let {peopleCnt} dudes live please
-FeedPeopleIntent let {peopleCnt} guy live please
 FeedPeopleIntent let {peopleCnt} person live please
 FeedPeopleIntent let {peopleCnt} dudes live please
 FeedPeopleIntent let {peopleCnt} gals live please
+FeedPeopleIntent let {peopleCnt} serfs live please
 FeedPeopleIntent let {peopleCnt} people live
 FeedPeopleIntent let {peopleCnt} subjects live
 FeedPeopleIntent let {peopleCnt} peasants live
 FeedPeopleIntent let {peopleCnt} dudes live
-FeedPeopleIntent let {peopleCnt} guy live
 FeedPeopleIntent let {peopleCnt} person live
 FeedPeopleIntent let {peopleCnt} dudes live
 FeedPeopleIntent let {peopleCnt} gals live
+FeedPeopleIntent let {peopleCnt} serfs live
 
 FeedEveryoneIntent feed everyone please
 FeedEveryoneIntent feed everyone
@@ -256,34 +260,34 @@ FeedEveryoneIntent feed all my people please
 FeedEveryoneIntent feed all my subjects please
 FeedEveryoneIntent feed all my peasants please
 FeedEveryoneIntent feed all my dudes please
-FeedEveryoneIntent feed all my guy please
 FeedEveryoneIntent feed all my person please
 FeedEveryoneIntent feed all my dudes please
 FeedEveryoneIntent feed all my gals please
+FeedEveryoneIntent feed all my serfs please
 FeedEveryoneIntent feed all my people
 FeedEveryoneIntent feed all my subjects
 FeedEveryoneIntent feed all my peasants
 FeedEveryoneIntent feed all my dudes
-FeedEveryoneIntent feed all my guy
 FeedEveryoneIntent feed all my person
 FeedEveryoneIntent feed all my dudes
 FeedEveryoneIntent feed all my gals
+FeedEveryoneIntent feed all my serfs
 FeedEveryoneIntent feed all the people please
 FeedEveryoneIntent feed all the subjects please
 FeedEveryoneIntent feed all the peasants please
 FeedEveryoneIntent feed all the dudes please
-FeedEveryoneIntent feed all the guy please
 FeedEveryoneIntent feed all the person please
 FeedEveryoneIntent feed all the dudes please
 FeedEveryoneIntent feed all the gals please
+FeedEveryoneIntent feed all the serfs please
 FeedEveryoneIntent feed all the people
 FeedEveryoneIntent feed all the subjects
 FeedEveryoneIntent feed all the peasants
 FeedEveryoneIntent feed all the dudes
-FeedEveryoneIntent feed all the guy
 FeedEveryoneIntent feed all the person
 FeedEveryoneIntent feed all the dudes
 FeedEveryoneIntent feed all the gals
+FeedEveryoneIntent feed all the serfs
 FeedEveryoneIntent feed with the rest please
 FeedEveryoneIntent feed with the rest
 FeedEveryoneIntent use the rest to feed please
@@ -292,71 +296,74 @@ FeedEveryoneIntent feed my people please
 FeedEveryoneIntent feed my subjects please
 FeedEveryoneIntent feed my peasants please
 FeedEveryoneIntent feed my dudes please
-FeedEveryoneIntent feed my guy please
 FeedEveryoneIntent feed my person please
 FeedEveryoneIntent feed my dudes please
 FeedEveryoneIntent feed my gals please
+FeedEveryoneIntent feed my serfs please
 FeedEveryoneIntent feed my people
 FeedEveryoneIntent feed my subjects
 FeedEveryoneIntent feed my peasants
 FeedEveryoneIntent feed my dudes
-FeedEveryoneIntent feed my guy
 FeedEveryoneIntent feed my person
 FeedEveryoneIntent feed my dudes
 FeedEveryoneIntent feed my gals
+FeedEveryoneIntent feed my serfs
 
 FeedNoOneIntent feed none of my people
 FeedNoOneIntent feed none of my subjects
 FeedNoOneIntent feed none of my peasants
 FeedNoOneIntent feed none of my dudes
-FeedNoOneIntent feed none of my guy
 FeedNoOneIntent feed none of my person
 FeedNoOneIntent feed none of my dudes
 FeedNoOneIntent feed none of my gals
+FeedNoOneIntent feed none of my serfs
 FeedNoOneIntent feed no people
 FeedNoOneIntent feed no subjects
 FeedNoOneIntent feed no peasants
 FeedNoOneIntent feed no dudes
-FeedNoOneIntent feed no guy
 FeedNoOneIntent feed no person
 FeedNoOneIntent feed no dudes
 FeedNoOneIntent feed no gals
+FeedNoOneIntent feed no serfs
 FeedNoOneIntent feed no one
 FeedNoOneIntent feed none of the people
 FeedNoOneIntent feed none of the subjects
 FeedNoOneIntent feed none of the peasants
 FeedNoOneIntent feed none of the dudes
-FeedNoOneIntent feed none of the guy
 FeedNoOneIntent feed none of the person
 FeedNoOneIntent feed none of the dudes
 FeedNoOneIntent feed none of the gals
+FeedNoOneIntent feed none of the serfs
 FeedNoOneIntent let them starve
 FeedNoOneIntent starve them
 FeedNoOneIntent starve my people
 FeedNoOneIntent starve my subjects
 FeedNoOneIntent starve my peasants
 FeedNoOneIntent starve my dudes
-FeedNoOneIntent starve my guy
 FeedNoOneIntent starve my person
 FeedNoOneIntent starve my dudes
 FeedNoOneIntent starve my gals
+FeedNoOneIntent starve my serfs
 FeedNoOneIntent starve people
 FeedNoOneIntent starve subjects
 FeedNoOneIntent starve peasants
 FeedNoOneIntent starve dudes
-FeedNoOneIntent starve guy
 FeedNoOneIntent starve person
 FeedNoOneIntent starve dudes
 FeedNoOneIntent starve gals
+FeedNoOneIntent starve serfs
 FeedNoOneIntent starve everyone
 FeedNoOneIntent starve the people
 FeedNoOneIntent starve the subjects
 FeedNoOneIntent starve the peasants
 FeedNoOneIntent starve the dudes
-FeedNoOneIntent starve the guy
 FeedNoOneIntent starve the person
 FeedNoOneIntent starve the dudes
 FeedNoOneIntent starve the gals
+FeedNoOneIntent starve the serfs
+FeedNoOneIntent wipe them out
+FeedNoOneIntent wipe them out all of them
+FeedNoOneIntent let them eat cake
 
 
 PlantIntent plant {plantCnt} acres please
@@ -481,6 +488,37 @@ PlantAllIntent plant with the rest
 PlantAllIntent sow with the rest
 PlantAllIntent seed with the rest
 
+PlantNothingIntent plant nothing
+PlantNothingIntent sow nothing
+PlantNothingIntent seed nothing
+PlantNothingIntent plant no acres
+PlantNothingIntent sow no acres
+PlantNothingIntent seed no acres
+PlantNothingIntent plant no acres of land
+PlantNothingIntent sow no acres of land
+PlantNothingIntent seed no acres of land
+PlantNothingIntent plant no parcels
+PlantNothingIntent sow no parcels
+PlantNothingIntent seed no parcels
+PlantNothingIntent plant no parcels of land
+PlantNothingIntent sow no parcels of land
+PlantNothingIntent seed no parcels of land
+PlantNothingIntent plant no lots
+PlantNothingIntent sow no lots
+PlantNothingIntent seed no lots
+PlantNothingIntent plant no lots of land
+PlantNothingIntent sow no lots of land
+PlantNothingIntent seed no lots of land
+PlantNothingIntent plant no plots
+PlantNothingIntent sow no plots
+PlantNothingIntent seed no plots
+PlantNothingIntent plant no plots of land
+PlantNothingIntent sow no plots of land
+PlantNothingIntent seed no plots of land
+PlantNothingIntent plant no bushels
+PlantNothingIntent sow no bushels
+PlantNothingIntent seed no bushels
+
 AMAZON.RepeatIntent what's my status
 AMAZON.RepeatIntent what is my status
 AMAZON.RepeatIntent report
@@ -489,109 +527,356 @@ AMAZON.RepeatIntent survey my lands
 AMAZON.RepeatIntent repeat
 AMAZON.RepeatIntent say that again
 
-CommandIntent what am I doing
-CommandIntent what am I doing again
-CommandIntent how much am I planting
-CommandIntent how much am I sowing
-CommandIntent how much am I seeding
-CommandIntent how much am I buying
-CommandIntent how much am I purchaseing
-CommandIntent how much am I acquireing
-CommandIntent how much am I selling
-CommandIntent how much am I liquidateing
-CommandIntent how much am I feeding
-CommandIntent how much am I give food foring
-CommandIntent how much am I provide foring
-CommandIntent how many acres am I planting
-CommandIntent how many acres of land am I planting
-CommandIntent how many parcels am I planting
-CommandIntent how many parcels of land am I planting
-CommandIntent how many lots am I planting
-CommandIntent how many lots of land am I planting
-CommandIntent how many plots am I planting
-CommandIntent how many plots of land am I planting
-CommandIntent how many acres am I sowing
-CommandIntent how many acres of land am I sowing
-CommandIntent how many parcels am I sowing
-CommandIntent how many parcels of land am I sowing
-CommandIntent how many lots am I sowing
-CommandIntent how many lots of land am I sowing
-CommandIntent how many plots am I sowing
-CommandIntent how many plots of land am I sowing
-CommandIntent how many acres am I seeding
-CommandIntent how many acres of land am I seeding
-CommandIntent how many parcels am I seeding
-CommandIntent how many parcels of land am I seeding
-CommandIntent how many lots am I seeding
-CommandIntent how many lots of land am I seeding
-CommandIntent how many plots am I seeding
-CommandIntent how many plots of land am I seeding
-CommandIntent how many acres am I buying
-CommandIntent how many acres of land am I buying
-CommandIntent how many parcels am I buying
-CommandIntent how many parcels of land am I buying
-CommandIntent how many lots am I buying
-CommandIntent how many lots of land am I buying
-CommandIntent how many plots am I buying
-CommandIntent how many plots of land am I buying
-CommandIntent how many acres am I purchaseing
-CommandIntent how many acres of land am I purchaseing
-CommandIntent how many parcels am I purchaseing
-CommandIntent how many parcels of land am I purchaseing
-CommandIntent how many lots am I purchaseing
-CommandIntent how many lots of land am I purchaseing
-CommandIntent how many plots am I purchaseing
-CommandIntent how many plots of land am I purchaseing
-CommandIntent how many acres am I acquireing
-CommandIntent how many acres of land am I acquireing
-CommandIntent how many parcels am I acquireing
-CommandIntent how many parcels of land am I acquireing
-CommandIntent how many lots am I acquireing
-CommandIntent how many lots of land am I acquireing
-CommandIntent how many plots am I acquireing
-CommandIntent how many plots of land am I acquireing
-CommandIntent how many acres am I selling
-CommandIntent how many acres of land am I selling
-CommandIntent how many parcels am I selling
-CommandIntent how many parcels of land am I selling
-CommandIntent how many lots am I selling
-CommandIntent how many lots of land am I selling
-CommandIntent how many plots am I selling
-CommandIntent how many plots of land am I selling
-CommandIntent how many acres am I liquidateing
-CommandIntent how many acres of land am I liquidateing
-CommandIntent how many parcels am I liquidateing
-CommandIntent how many parcels of land am I liquidateing
-CommandIntent how many lots am I liquidateing
-CommandIntent how many lots of land am I liquidateing
-CommandIntent how many plots am I liquidateing
-CommandIntent how many plots of land am I liquidateing
-CommandIntent how many people am I feeding
-CommandIntent how many subjects am I feeding
-CommandIntent how many peasants am I feeding
-CommandIntent how many dudes am I feeding
-CommandIntent how many guy am I feeding
-CommandIntent how many person am I feeding
-CommandIntent how many dudes am I feeding
-CommandIntent how many gals am I feeding
-CommandIntent how many people am I give food foring
-CommandIntent how many subjects am I give food foring
-CommandIntent how many peasants am I give food foring
-CommandIntent how many dudes am I give food foring
-CommandIntent how many guy am I give food foring
-CommandIntent how many person am I give food foring
-CommandIntent how many dudes am I give food foring
-CommandIntent how many gals am I give food foring
-CommandIntent how many people am I provide foring
-CommandIntent how many subjects am I provide foring
-CommandIntent how many peasants am I provide foring
-CommandIntent how many dudes am I provide foring
-CommandIntent how many guy am I provide foring
-CommandIntent how many person am I provide foring
-CommandIntent how many dudes am I provide foring
-CommandIntent how many gals am I provide foring
+ActionsQueryIntent what am I doing
+ActionsQueryIntent what am I doing again
+ActionsQueryIntent what are my actions
+ActionsQueryIntent how much am I planting
+ActionsQueryIntent how much am I sowing
+ActionsQueryIntent how much am I seeding
+ActionsQueryIntent how much am I buying
+ActionsQueryIntent how much am I purchaseing
+ActionsQueryIntent how much am I acquireing
+ActionsQueryIntent how much am I selling
+ActionsQueryIntent how much am I liquidateing
+ActionsQueryIntent how much am I feeding
+ActionsQueryIntent how much am I give food foring
+ActionsQueryIntent how much am I provide foring
+ActionsQueryIntent how many acres am I planting
+ActionsQueryIntent how many acres of land am I planting
+ActionsQueryIntent how many parcels am I planting
+ActionsQueryIntent how many parcels of land am I planting
+ActionsQueryIntent how many lots am I planting
+ActionsQueryIntent how many lots of land am I planting
+ActionsQueryIntent how many plots am I planting
+ActionsQueryIntent how many plots of land am I planting
+ActionsQueryIntent how many acres am I sowing
+ActionsQueryIntent how many acres of land am I sowing
+ActionsQueryIntent how many parcels am I sowing
+ActionsQueryIntent how many parcels of land am I sowing
+ActionsQueryIntent how many lots am I sowing
+ActionsQueryIntent how many lots of land am I sowing
+ActionsQueryIntent how many plots am I sowing
+ActionsQueryIntent how many plots of land am I sowing
+ActionsQueryIntent how many acres am I seeding
+ActionsQueryIntent how many acres of land am I seeding
+ActionsQueryIntent how many parcels am I seeding
+ActionsQueryIntent how many parcels of land am I seeding
+ActionsQueryIntent how many lots am I seeding
+ActionsQueryIntent how many lots of land am I seeding
+ActionsQueryIntent how many plots am I seeding
+ActionsQueryIntent how many plots of land am I seeding
+ActionsQueryIntent how many acres am I buying
+ActionsQueryIntent how many acres of land am I buying
+ActionsQueryIntent how many parcels am I buying
+ActionsQueryIntent how many parcels of land am I buying
+ActionsQueryIntent how many lots am I buying
+ActionsQueryIntent how many lots of land am I buying
+ActionsQueryIntent how many plots am I buying
+ActionsQueryIntent how many plots of land am I buying
+ActionsQueryIntent how many acres am I purchaseing
+ActionsQueryIntent how many acres of land am I purchaseing
+ActionsQueryIntent how many parcels am I purchaseing
+ActionsQueryIntent how many parcels of land am I purchaseing
+ActionsQueryIntent how many lots am I purchaseing
+ActionsQueryIntent how many lots of land am I purchaseing
+ActionsQueryIntent how many plots am I purchaseing
+ActionsQueryIntent how many plots of land am I purchaseing
+ActionsQueryIntent how many acres am I acquireing
+ActionsQueryIntent how many acres of land am I acquireing
+ActionsQueryIntent how many parcels am I acquireing
+ActionsQueryIntent how many parcels of land am I acquireing
+ActionsQueryIntent how many lots am I acquireing
+ActionsQueryIntent how many lots of land am I acquireing
+ActionsQueryIntent how many plots am I acquireing
+ActionsQueryIntent how many plots of land am I acquireing
+ActionsQueryIntent how many acres am I selling
+ActionsQueryIntent how many acres of land am I selling
+ActionsQueryIntent how many parcels am I selling
+ActionsQueryIntent how many parcels of land am I selling
+ActionsQueryIntent how many lots am I selling
+ActionsQueryIntent how many lots of land am I selling
+ActionsQueryIntent how many plots am I selling
+ActionsQueryIntent how many plots of land am I selling
+ActionsQueryIntent how many acres am I liquidateing
+ActionsQueryIntent how many acres of land am I liquidateing
+ActionsQueryIntent how many parcels am I liquidateing
+ActionsQueryIntent how many parcels of land am I liquidateing
+ActionsQueryIntent how many lots am I liquidateing
+ActionsQueryIntent how many lots of land am I liquidateing
+ActionsQueryIntent how many plots am I liquidateing
+ActionsQueryIntent how many plots of land am I liquidateing
+ActionsQueryIntent how many people am I feeding
+ActionsQueryIntent how many subjects am I feeding
+ActionsQueryIntent how many peasants am I feeding
+ActionsQueryIntent how many dudes am I feeding
+ActionsQueryIntent how many person am I feeding
+ActionsQueryIntent how many dudes am I feeding
+ActionsQueryIntent how many gals am I feeding
+ActionsQueryIntent how many serfs am I feeding
+ActionsQueryIntent how many people am I give food foring
+ActionsQueryIntent how many subjects am I give food foring
+ActionsQueryIntent how many peasants am I give food foring
+ActionsQueryIntent how many dudes am I give food foring
+ActionsQueryIntent how many person am I give food foring
+ActionsQueryIntent how many dudes am I give food foring
+ActionsQueryIntent how many gals am I give food foring
+ActionsQueryIntent how many serfs am I give food foring
+ActionsQueryIntent how many people am I provide foring
+ActionsQueryIntent how many subjects am I provide foring
+ActionsQueryIntent how many peasants am I provide foring
+ActionsQueryIntent how many dudes am I provide foring
+ActionsQueryIntent how many person am I provide foring
+ActionsQueryIntent how many dudes am I provide foring
+ActionsQueryIntent how many gals am I provide foring
+ActionsQueryIntent how many serfs am I provide foring
+ActionsQueryIntent how many bushels do i have left
+ActionsQueryIntent how many bushels do i have
+
+AcresCostQueryIntent how much do acres cost
+AcresCostQueryIntent how much do acres of land cost
+AcresCostQueryIntent how much do parcels cost
+AcresCostQueryIntent how much do parcels of land cost
+AcresCostQueryIntent how much do lots cost
+AcresCostQueryIntent how much do lots of land cost
+AcresCostQueryIntent how much do plots cost
+AcresCostQueryIntent how much do plots of land cost
+AcresCostQueryIntent how much are acres selling for
+AcresCostQueryIntent how much are acres of land selling for
+AcresCostQueryIntent how much are parcels selling for
+AcresCostQueryIntent how much are parcels of land selling for
+AcresCostQueryIntent how much are lots selling for
+AcresCostQueryIntent how much are lots of land selling for
+AcresCostQueryIntent how much are plots selling for
+AcresCostQueryIntent how much are plots of land selling for
+AcresCostQueryIntent how much are acres liquidateing for
+AcresCostQueryIntent how much are acres of land liquidateing for
+AcresCostQueryIntent how much are parcels liquidateing for
+AcresCostQueryIntent how much are parcels of land liquidateing for
+AcresCostQueryIntent how much are lots liquidateing for
+AcresCostQueryIntent how much are lots of land liquidateing for
+AcresCostQueryIntent how much are plots liquidateing for
+AcresCostQueryIntent how much are plots of land liquidateing for
+AcresCostQueryIntent how many acres can I buy
+AcresCostQueryIntent how many acres of land can I buy
+AcresCostQueryIntent how many parcels can I buy
+AcresCostQueryIntent how many parcels of land can I buy
+AcresCostQueryIntent how many lots can I buy
+AcresCostQueryIntent how many lots of land can I buy
+AcresCostQueryIntent how many plots can I buy
+AcresCostQueryIntent how many plots of land can I buy
+AcresCostQueryIntent how many acres can I sell
+AcresCostQueryIntent how many acres of land can I sell
+AcresCostQueryIntent how many parcels can I sell
+AcresCostQueryIntent how many parcels of land can I sell
+AcresCostQueryIntent how many lots can I sell
+AcresCostQueryIntent how many lots of land can I sell
+AcresCostQueryIntent how many plots can I sell
+AcresCostQueryIntent how many plots of land can I sell
+
+AcresQueryIntent how many acres do I have
+AcresQueryIntent how many acres of land do I have
+AcresQueryIntent how many parcels do I have
+AcresQueryIntent how many parcels of land do I have
+AcresQueryIntent how many lots do I have
+AcresQueryIntent how many lots of land do I have
+AcresQueryIntent how many plots do I have
+AcresQueryIntent how many plots of land do I have
+AcresQueryIntent how many acres do I own
+AcresQueryIntent how many acres of land do I own
+AcresQueryIntent how many parcels do I own
+AcresQueryIntent how many parcels of land do I own
+AcresQueryIntent how many lots do I own
+AcresQueryIntent how many lots of land do I own
+AcresQueryIntent how many plots do I own
+AcresQueryIntent how many plots of land do I own
+AcresQueryIntent how many acres belong to me
+AcresQueryIntent how many acres of land belong to me
+AcresQueryIntent how many parcels belong to me
+AcresQueryIntent how many parcels of land belong to me
+AcresQueryIntent how many lots belong to me
+AcresQueryIntent how many lots of land belong to me
+AcresQueryIntent how many plots belong to me
+AcresQueryIntent how many plots of land belong to me
+AcresQueryIntent how many acres are in my kingdom
+AcresQueryIntent how many acres of land are in my kingdom
+AcresQueryIntent how many parcels are in my kingdom
+AcresQueryIntent how many parcels of land are in my kingdom
+AcresQueryIntent how many lots are in my kingdom
+AcresQueryIntent how many lots of land are in my kingdom
+AcresQueryIntent how many plots are in my kingdom
+AcresQueryIntent how many plots of land are in my kingdom
+AcresQueryIntent how many acres are in my fiefdom
+AcresQueryIntent how many acres of land are in my fiefdom
+AcresQueryIntent how many parcels are in my fiefdom
+AcresQueryIntent how many parcels of land are in my fiefdom
+AcresQueryIntent how many lots are in my fiefdom
+AcresQueryIntent how many lots of land are in my fiefdom
+AcresQueryIntent how many plots are in my fiefdom
+AcresQueryIntent how many plots of land are in my fiefdom
+AcresQueryIntent how many acres are in my city
+AcresQueryIntent how many acres of land are in my city
+AcresQueryIntent how many parcels are in my city
+AcresQueryIntent how many parcels of land are in my city
+AcresQueryIntent how many lots are in my city
+AcresQueryIntent how many lots of land are in my city
+AcresQueryIntent how many plots are in my city
+AcresQueryIntent how many plots of land are in my city
+AcresQueryIntent how many acres are in my realm
+AcresQueryIntent how many acres of land are in my realm
+AcresQueryIntent how many parcels are in my realm
+AcresQueryIntent how many parcels of land are in my realm
+AcresQueryIntent how many lots are in my realm
+AcresQueryIntent how many lots of land are in my realm
+AcresQueryIntent how many plots are in my realm
+AcresQueryIntent how many plots of land are in my realm
+AcresQueryIntent how many acres are in my domain
+AcresQueryIntent how many acres of land are in my domain
+AcresQueryIntent how many parcels are in my domain
+AcresQueryIntent how many parcels of land are in my domain
+AcresQueryIntent how many lots are in my domain
+AcresQueryIntent how many lots of land are in my domain
+AcresQueryIntent how many plots are in my domain
+AcresQueryIntent how many plots of land are in my domain
+
+PopulationQueryIntent how many people do I have
+PopulationQueryIntent how many subjects do I have
+PopulationQueryIntent how many peasants do I have
+PopulationQueryIntent how many dudes do I have
+PopulationQueryIntent how many person do I have
+PopulationQueryIntent how many dudes do I have
+PopulationQueryIntent how many gals do I have
+PopulationQueryIntent how many serfs do I have
+PopulationQueryIntent how many people do I have in my kingdom
+PopulationQueryIntent how many subjects do I have in my kingdom
+PopulationQueryIntent how many peasants do I have in my kingdom
+PopulationQueryIntent how many dudes do I have in my kingdom
+PopulationQueryIntent how many person do I have in my kingdom
+PopulationQueryIntent how many dudes do I have in my kingdom
+PopulationQueryIntent how many gals do I have in my kingdom
+PopulationQueryIntent how many serfs do I have in my kingdom
+PopulationQueryIntent how many people do I have in my fiefdom
+PopulationQueryIntent how many subjects do I have in my fiefdom
+PopulationQueryIntent how many peasants do I have in my fiefdom
+PopulationQueryIntent how many dudes do I have in my fiefdom
+PopulationQueryIntent how many person do I have in my fiefdom
+PopulationQueryIntent how many dudes do I have in my fiefdom
+PopulationQueryIntent how many gals do I have in my fiefdom
+PopulationQueryIntent how many serfs do I have in my fiefdom
+PopulationQueryIntent how many people do I have in my city
+PopulationQueryIntent how many subjects do I have in my city
+PopulationQueryIntent how many peasants do I have in my city
+PopulationQueryIntent how many dudes do I have in my city
+PopulationQueryIntent how many person do I have in my city
+PopulationQueryIntent how many dudes do I have in my city
+PopulationQueryIntent how many gals do I have in my city
+PopulationQueryIntent how many serfs do I have in my city
+PopulationQueryIntent how many people do I have in my realm
+PopulationQueryIntent how many subjects do I have in my realm
+PopulationQueryIntent how many peasants do I have in my realm
+PopulationQueryIntent how many dudes do I have in my realm
+PopulationQueryIntent how many person do I have in my realm
+PopulationQueryIntent how many dudes do I have in my realm
+PopulationQueryIntent how many gals do I have in my realm
+PopulationQueryIntent how many serfs do I have in my realm
+PopulationQueryIntent how many people do I have in my domain
+PopulationQueryIntent how many subjects do I have in my domain
+PopulationQueryIntent how many peasants do I have in my domain
+PopulationQueryIntent how many dudes do I have in my domain
+PopulationQueryIntent how many person do I have in my domain
+PopulationQueryIntent how many dudes do I have in my domain
+PopulationQueryIntent how many gals do I have in my domain
+PopulationQueryIntent how many serfs do I have in my domain
+PopulationQueryIntent how many people are in my kingdom
+PopulationQueryIntent how many subjects are in my kingdom
+PopulationQueryIntent how many peasants are in my kingdom
+PopulationQueryIntent how many dudes are in my kingdom
+PopulationQueryIntent how many person are in my kingdom
+PopulationQueryIntent how many dudes are in my kingdom
+PopulationQueryIntent how many gals are in my kingdom
+PopulationQueryIntent how many serfs are in my kingdom
+PopulationQueryIntent how many people are in my fiefdom
+PopulationQueryIntent how many subjects are in my fiefdom
+PopulationQueryIntent how many peasants are in my fiefdom
+PopulationQueryIntent how many dudes are in my fiefdom
+PopulationQueryIntent how many person are in my fiefdom
+PopulationQueryIntent how many dudes are in my fiefdom
+PopulationQueryIntent how many gals are in my fiefdom
+PopulationQueryIntent how many serfs are in my fiefdom
+PopulationQueryIntent how many people are in my city
+PopulationQueryIntent how many subjects are in my city
+PopulationQueryIntent how many peasants are in my city
+PopulationQueryIntent how many dudes are in my city
+PopulationQueryIntent how many person are in my city
+PopulationQueryIntent how many dudes are in my city
+PopulationQueryIntent how many gals are in my city
+PopulationQueryIntent how many serfs are in my city
+PopulationQueryIntent how many people are in my realm
+PopulationQueryIntent how many subjects are in my realm
+PopulationQueryIntent how many peasants are in my realm
+PopulationQueryIntent how many dudes are in my realm
+PopulationQueryIntent how many person are in my realm
+PopulationQueryIntent how many dudes are in my realm
+PopulationQueryIntent how many gals are in my realm
+PopulationQueryIntent how many serfs are in my realm
+PopulationQueryIntent how many people are in my domain
+PopulationQueryIntent how many subjects are in my domain
+PopulationQueryIntent how many peasants are in my domain
+PopulationQueryIntent how many dudes are in my domain
+PopulationQueryIntent how many person are in my domain
+PopulationQueryIntent how many dudes are in my domain
+PopulationQueryIntent how many gals are in my domain
+PopulationQueryIntent how many serfs are in my domain
+PopulationQueryIntent how many people are in the kingdom
+PopulationQueryIntent how many subjects are in the kingdom
+PopulationQueryIntent how many peasants are in the kingdom
+PopulationQueryIntent how many dudes are in the kingdom
+PopulationQueryIntent how many person are in the kingdom
+PopulationQueryIntent how many dudes are in the kingdom
+PopulationQueryIntent how many gals are in the kingdom
+PopulationQueryIntent how many serfs are in the kingdom
+PopulationQueryIntent how many people are in the fiefdom
+PopulationQueryIntent how many subjects are in the fiefdom
+PopulationQueryIntent how many peasants are in the fiefdom
+PopulationQueryIntent how many dudes are in the fiefdom
+PopulationQueryIntent how many person are in the fiefdom
+PopulationQueryIntent how many dudes are in the fiefdom
+PopulationQueryIntent how many gals are in the fiefdom
+PopulationQueryIntent how many serfs are in the fiefdom
+PopulationQueryIntent how many people are in the city
+PopulationQueryIntent how many subjects are in the city
+PopulationQueryIntent how many peasants are in the city
+PopulationQueryIntent how many dudes are in the city
+PopulationQueryIntent how many person are in the city
+PopulationQueryIntent how many dudes are in the city
+PopulationQueryIntent how many gals are in the city
+PopulationQueryIntent how many serfs are in the city
+PopulationQueryIntent how many people are in the realm
+PopulationQueryIntent how many subjects are in the realm
+PopulationQueryIntent how many peasants are in the realm
+PopulationQueryIntent how many dudes are in the realm
+PopulationQueryIntent how many person are in the realm
+PopulationQueryIntent how many dudes are in the realm
+PopulationQueryIntent how many gals are in the realm
+PopulationQueryIntent how many serfs are in the realm
+PopulationQueryIntent how many people are in the domain
+PopulationQueryIntent how many subjects are in the domain
+PopulationQueryIntent how many peasants are in the domain
+PopulationQueryIntent how many dudes are in the domain
+PopulationQueryIntent how many person are in the domain
+PopulationQueryIntent how many dudes are in the domain
+PopulationQueryIntent how many gals are in the domain
+PopulationQueryIntent how many serfs are in the domain
+PopulationQueryIntent what is my population
+PopulationQueryIntent what is my kingdom's population
+PopulationQueryIntent what is my fiefdom's population
+PopulationQueryIntent what is my city's population
+PopulationQueryIntent what is my realm's population
+PopulationQueryIntent what is my domain's population
 
 NextYearIntent that's it
+NextYearIntent that's all
+NextYearIntent done
+NextYearIntent I'm done
 NextYearIntent next year
 NextYearIntent go to next year
 NextYearIntent what happens next
@@ -761,6 +1046,10 @@ AMAZON.StopIntent we're done here
 AMAZON.StopIntent good night
 AMAZON.StopIntent neither
 AMAZON.StopIntent abandon my kingdom
+AMAZON.StopIntent abandon my fiefdom
+AMAZON.StopIntent abandon my city
+AMAZON.StopIntent abandon my realm
+AMAZON.StopIntent abandon my domain
 AMAZON.StopIntent walk away from it all
 
 AMAZON.YesIntent absolutely
@@ -862,3 +1151,41 @@ AMAZON.StartOverIntent restart
 AMAZON.StartOverIntent start again
 AMAZON.StartOverIntent play another game
 AMAZON.StartOverIntent try again
+
+
+WaitIntent give me a bit to think
+WaitIntent give me a moment to think
+WaitIntent give me a second to think
+WaitIntent give me a hot second to think
+WaitIntent give me a minute to think
+WaitIntent give me a while to think
+WaitIntent give me some time to think
+WaitIntent let me think
+WaitIntent hang on
+WaitIntent hang on for a bit
+WaitIntent hang on for a moment
+WaitIntent hang on for a second
+WaitIntent hang on for a hot second
+WaitIntent hang on for a minute
+WaitIntent hang on for a while
+WaitIntent hang on for some time
+WaitIntent hold on
+WaitIntent hold on for a bit
+WaitIntent hold on for a moment
+WaitIntent hold on for a second
+WaitIntent hold on for a hot second
+WaitIntent hold on for a minute
+WaitIntent hold on for a while
+WaitIntent hold on for some time
+WaitIntent a bit
+WaitIntent a moment
+WaitIntent a second
+WaitIntent a hot second
+WaitIntent a minute
+WaitIntent a while
+WaitIntent some time
+WaitIntent one bit
+WaitIntent one moment
+WaitIntent one second
+WaitIntent one minute
+WaitIntent pause

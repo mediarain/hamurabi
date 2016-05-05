@@ -10,7 +10,7 @@ var responses = function () {
   return {
     "Errors": {
       General: {
-        tell: "Oops, you're empire was destroyed by a freak {accident}. Try again."
+        tell: "Oh no! You're empire was destroyed by a devastating {accident}. Try again."
       },
       BadLaunch: {
         tell: "I've got no idea what you're trying to do. If you want to play Hammurabi, say Alexa, play Hammurabi"

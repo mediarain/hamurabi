@@ -32,7 +32,11 @@ module.exports = StateMachine({
   },
   onError: function onError(request, error) {
     var self = this;
-    return new Reply(_.at(responses, 'Errors.General')[0]);
+    return new Reply({
+      tell: "Oh no! You're empire was destroyed by a devastating " +
+           _.sample(['fire','earthquake','hurricane','tornado','tsunami','alien invasion','mole men attack'])
+          + ". Try again."
+    });
   },
   openIntent: 'LaunchIntent',
   states: {
