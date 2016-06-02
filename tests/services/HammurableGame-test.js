@@ -10,7 +10,7 @@ describe('HammurabiGame', function () {
     it('iterates for a single year',function(){
       var start = HammurabiGame.create();
       start.acresCost = 17;
-      var actual = HammurabiGame.iterate(start,new Command({plant: 0, feed: 100, buy: 0, migrantRoll: 1, ratsRoll: 2, yieldRoll: 1, plagueRoll: .5}))
+      var actual = start.iterate(new Command({plant: 0, feed: 100, buy: 0, migrantRoll: 1, ratsRoll: 2, yieldRoll: 1, plagueRoll: .5}))
       assert.equal(103,actual.population);
       assert.equal(3,actual.immigrants);
       assert.equal(0,actual.harvest);
@@ -25,7 +25,7 @@ describe('HammurabiGame', function () {
     it('does rats',function(){
       var start = HammurabiGame.create();
       start.acresCost = 17;
-      var actual = HammurabiGame.iterate(start,new Command({plant: 0, feed: 100, buy: 0, migrantRoll: 1, ratsRoll: 3, yieldRoll: 1, plagueRoll: .5}))
+      var actual = start.iterate(new Command({plant: 0, feed: 100, buy: 0, migrantRoll: 1, ratsRoll: 3, yieldRoll: 1, plagueRoll: .5}))
       assert.equal(103,actual.population);
       assert.equal(3,actual.immigrants);
       assert.equal(0,actual.harvest);
@@ -40,7 +40,7 @@ describe('HammurabiGame', function () {
     it('does plague',function(){
       var start = HammurabiGame.create();
       start.acresCost = 17;
-      var actual = HammurabiGame.iterate(start,new Command({plant: 0, feed: 100, buy: 0, migrantRoll: 1, ratsRoll: 2, yieldRoll: 1, plagueRoll: .05}))
+      var actual = start.iterate(new Command({plant: 0, feed: 100, buy: 0, migrantRoll: 1, ratsRoll: 2, yieldRoll: 1, plagueRoll: .05}))
       assert.equal(2,actual.year);
       assert.equal(53,actual.population);
       assert.equal(3,actual.immigrants);

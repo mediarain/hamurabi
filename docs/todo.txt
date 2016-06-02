@@ -1,4 +1,3 @@
-Cold Help menu
 Feed a percentage of population
 Feed all but XXX
 Sell enough acres to feed everyone
@@ -8,7 +7,5 @@ Ask calculations
   Sell & buy calcs
 Test a play through
 allow for in-place variations in utterances
-On plant workers limited, say how many unused acres you've got
 
 Plant everything says "with the rest of your bushels" even if you've got some left over
-bug-of-some-kind

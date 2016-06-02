@@ -56,6 +56,18 @@ module.exports = StateMachine({
         else return replyWith(null,'launch',request);
       }
     },
+    'startnew': {
+      enter: function(request) {
+        if(request.intent.name == 'AMAZON.YesIntent') {
+          delete request.session.attributes.game;
+          delete request.session.attributes.command;
+          return replyWith('StartNew','launch',request);
+        }
+        else if(request.intent.name == 'AMAZON.NoIntent') {
+          return replyWith(null,'report',request);
+        }
+      }
+    },
     'startover': {
       enter: function(request) {
         if(request.intent.name == 'AMAZON.YesIntent') {
@@ -85,7 +97,7 @@ module.exports = StateMachine({
     },
     'cold-help': {
       enter: function(request) {
-        return replyWith('Help.ExplainGame','startover',request,game, cmd);
+        return replyWith('Help.ExplainGame','startnew',request,null, null);
       }
     },
     'launch': {

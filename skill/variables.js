@@ -90,6 +90,10 @@ exports.acres = function(game,cmd) {
   return lang.quantify(game.acres,'acre');
 }
 
+exports.acresUnused = function(game,cmd) {
+  return lang.quantify(cmd.acresLeft(game),'unused acres');
+}
+
 exports.bushelsUnused = function(game,cmd) {
   return lang.quantify(cmd.bushelsLeft(game),'unused bushel');
 }

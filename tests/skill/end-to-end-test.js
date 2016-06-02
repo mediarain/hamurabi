@@ -61,6 +61,16 @@ describe('end to end',function(){
     assert.match(res.response.outputSpeech.ssml,/YOU STARVED 100 PEOPLE IN ONE YEAR!/i);
   });
 
+  itIs('does-not-error-when-selling-lots',function(res){
+    assert.isFalse(res.response.shouldEndSession);
+    assert.equal(res.sessionAttributes.game.year,4);
+    assert.equal(res.sessionAttributes.game.acres,938);
+  });
+
+  itIs('cold-help',function(res){
+    assert.match(res.response.outputSpeech.ssml,/Hammurabi is one of the first games made for terminal computers/i);
+  });
+
   itIs('plant/error-bushels-with-command',function(res){
     assert.match(res.response.outputSpeech.ssml,/800 bushels/i);
     assert.equal(res.sessionAttributes.state,'query-action');
@@ -83,6 +93,7 @@ describe('end to end',function(){
     assert.match(res.response.outputSpeech.ssml,/You plant 200 acres/);
     assert.match(res.response.outputSpeech.ssml,/most you can work with 20 people/);
     assert.match(res.response.outputSpeech.ssml,/you have 2600 bushels left/i);
+    assert.match(res.response.outputSpeech.ssml,/and 800 unused acres/i);
   });
 
   itIs('plant/nothing',function(res){

@@ -1,4 +1,7 @@
-{
+var init = require('../../../services/HammurabiGame.js').create()
+  , _ = require('lodash')
+;
+module.exports = {
   "session": {
     "sessionId": "SessionId.20df0450-7608-441b-a9e3-86eaa417851b",
     "application": {

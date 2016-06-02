@@ -14,10 +14,9 @@ describe('variables',function(){
       var actual = variables.kingdomStatus(game);
       assert.equal(actual,
         "HAMURABI: I BEG TO REPORT TO YOU,\n" +
-        "IN YEAR 1 NOBODY STARVED AND NOBODY CAME TO THE CITY.\n" +
-        "POPULATION IS NOW 100.\n" +
-        "THE CITY NOW OWNS 1000 ACRES.\n" +
-        "YOU NOW HAVE 2800 BUSHELS IN STORE.\n" +
+        "IN YEAR 1 YOUR POPULATION IS 100.\n" +
+        "THE CITY OWNS 1000 ACRES.\n" +
+        "YOU HAVE 2800 BUSHELS IN STORE.\n" +
         "LAND IS TRADING AT 17 BUSHELS PER ACRE."
                   );
         })

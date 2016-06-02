@@ -34,7 +34,7 @@ var responses = function () {
         "FeedNoOne": { say: "Feed no one my lord! Your subjects will not stand for such tyranny." },
         "Plant": { say: "You're planting {plantAcres}." },
         "PlantAll": { say: "You're planting all {plantAcres} and have {bushelsLeft}." },
-        "PlantRestWorkersLimited": { say: "You plant {plantAcres}, which is the most you can work with {populationPeople}. You have {bushelsLeft}. " },
+        "PlantRestWorkersLimited": { say: "You plant {plantAcres}, which is the most you can work with {populationPeople}. You have {bushelsLeft} and {acresUnused}. " },
         "PlantRestBushelsLimited": { say: "With the rest of your bushels, you plant {plantAcres}." },
         "PlantNothing": { say: "You plant nothing. I fear your foresight master." },
       },
@@ -98,6 +98,7 @@ var responses = function () {
        reprompt: "Do you want to start over?",
     },
     "StartOver": { say: "Running a kingdom is harder than it sounds. Let's try again." },
+    "StartNew": { say: "Great. Let's give it a try." },
     "ExitQuery": {
        ask: "Exit? Are you a coward? Would you abandon your people?",
        reprompt: "Do you want to exit Hammurabi?",
@@ -118,8 +119,10 @@ var responses = function () {
              "Be sure to feed your people and plant food for the next year."
       },
       "ExplainGame": {
-        say: "Hammurabi is one of the first games made for terminal computers. " +
-          "In Hammurabi you manage a kingdom and se \n" +
+        ask: "Hammurabi is one of the first games made for terminal computers.\n" +
+          "In Hammurabi you manage a kingdom.\n" +
+          "Each year you must carefully balance how many bushels you'll use to feed your workers, and how much you'll plant for the next year.\n" +
+          "With famine years, plagues, and rats, it'll be a challenge to prevent revolts and prepare for the next year.\n" +
           "Do want to give it a try?"
       }
     },
