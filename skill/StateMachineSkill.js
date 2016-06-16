@@ -9,7 +9,7 @@ var _ = require('lodash'),
     Promise = require('bluebird');
 
 /**
- * Starbucks is a child of AlexaSkill.
+ * Hamurabi is a child of AlexaSkill.
  */
 var StateMachineSkill = module.exports = function (appId, StateMachine) {
   this._StateMachine = StateMachine;
@@ -26,7 +26,7 @@ var ERRORS = module.exports.ERRORS = {
 };
 
 StateMachineSkill.prototype.eventHandlers.onSessionStarted = function (sessionStartedRequest, session) {
-  console.log("Starbucks onSessionStarted requestId: " + sessionStartedRequest.requestId + ", sessionId: " + session.sessionId);
+  console.log("Hamurabi onSessionStarted requestId: " + sessionStartedRequest.requestId + ", sessionId: " + session.sessionId);
   var handler = this._StateMachine.onSessionStart;
   if (handler) handler(new Request(sessionStartedRequest, session));
 };
