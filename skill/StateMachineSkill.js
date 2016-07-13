@@ -4,7 +4,7 @@ var _ = require('lodash'),
     AlexaSkill = require('./AlexaSkill'),
     responses = require('./responses'),
     Request = require('./Request.js'),
-    Reply = require('./reply'),
+    Reply = require('./Reply'),
     verbose = require('../config').verbose,
     Promise = require('bluebird');
 

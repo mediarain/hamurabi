@@ -1,8 +1,8 @@
 'use strict';
-
-var StateMachineSkill = require('./StateMachineSkill.js'),
-    HammurabiStateMachine = require('./HammurabiStateMachine.js'),
-    config = require('../config');
+var StateMachineSkill = require('./StateMachineSkill.js')
+  , HammurabiStateMachine = require('./HammurabiStateMachine.js')
+  , config = require('../config')
+;
 
 // Create the handler that responds to the Alexa Request.
 exports.handler = function (event, context) {

@@ -1,7 +1,7 @@
 'use strict';
 
 var StateMachine = require('./StateMachine.js')
-  , Reply = require('./reply.js')
+  , Reply = require('./Reply.js')
   , config = require('../config')
   , StateMachineSkill = require('./StateMachineSkill.js')
   , _ = require('lodash')

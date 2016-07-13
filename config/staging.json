@@ -1,0 +1,22 @@
+{
+  "server": {
+    "hostSkill": false
+  },
+  "alexa": {
+    "appId": "amzn1.echo-sdk-ams.app.230fbb7e-3d46-47fc-96df-ddd3a60a47f6"
+  },
+  "game": {
+    "bushelsToFeedPerson": 20,
+    "acresPersonWorks": 10,
+    "init": {
+      "year": 1,
+      "population": 100,
+      "immigrants": 0,
+      "acres": 1000,
+      "bushels": 2800,
+      "totalDied": 0,
+      "percentPopDied": 0
+    }
+  },
+  "verbose": true
+}

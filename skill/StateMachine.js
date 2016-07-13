@@ -4,7 +4,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _ = require('lodash'),
     Promise = require('bluebird'),
-    Reply = require('./reply.js'),
+    Reply = require('./Reply.js'),
     verbose = require('../config').verbose,
     StateMachineSkill = require('./StateMachineSkill.js');
 

@@ -3,17 +3,14 @@
 var gulp = require('gulp')
     , watch = require('gulp-watch')
     , runSequence = require('run-sequence')
-    , concat = require('gulp-concat')
-    , rename = require('gulp-rename')
     , nodemon = require('gulp-nodemon')
     , debug = require('gulp-debug')
     , rimraf = require('gulp-rimraf')
 //    , UtteranceExpaander = require('alexa-definition-author/utterances/UtteranceExpander')
+    , zip = require('gulp-zip')
+    , run = require('gulp-run')
     , fs = require('fs')
     , path = require('path')
-
-    , src = 'www/public-src/'
-    , dest = 'www/public/'
   ;
 
 gulp.task('watch', function (cb) {
@@ -26,7 +23,7 @@ gulp.task('watch', function (cb) {
 });
 
 gulp.task('clean',function(){
-  return gulp.src(dest).pipe(rimraf());
+  return gulp.src('archives').pipe(rimraf());
 })
 
 gulp.task('run', function(cb){
@@ -34,6 +31,18 @@ gulp.task('run', function(cb){
 });
 
 gulp.task('default',['run'], function (cb) {
+});
+
+gulp.task('upload',['zip'],function(cb){
+    run('aws lambda update-function-code --profile rainlabs --function-name Hamurabi --zip-file fileb://archives/archive.zip').exec()
+        .pipe(gulp.dest('output'));
+});
+
+gulp.task('zip',['clean'], function(cb){
+  return gulp.src(['**/*','archives/*.zip','!node_modules/gulp*/**/*','!node_modules/run-sequence/**/*','!node_modules/mocha/**/*'])
+    //.pipe(debug('in-archive'))
+    .pipe(zip('archive.zip'))
+    .pipe(gulp.dest('archives'));
 });
 
 // gulp.task('compile', function (cb) {
