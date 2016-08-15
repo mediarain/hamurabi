@@ -1,1 +1,0 @@
-EfSuzNe9SQQ553AosohCixR0VhfK9DO7lb3y0fBAGno=	1770583	Plays a the text based hamurabi game on the alexa	arn:aws:lambda:us-east-1:956055560278:function:Hamurabi	Hamurabi	skill/index.handler	2016-07-12T16:11:39.783+0000	128	arn:aws:iam::956055560278:role/lambda_basic_execution	nodejs4.3	10	$LATEST
