@@ -1,10 +1,37 @@
 
 
 
+
+
+LaunchIntent play a game please
+LaunchIntent start a game please
+LaunchIntent launch a game please
+LaunchIntent open a game please
+LaunchIntent play the game please
+LaunchIntent start the game please
+LaunchIntent launch the game please
+LaunchIntent open the game please
 LaunchIntent play a game
-LaunchIntent launch
+LaunchIntent start a game
+LaunchIntent launch a game
+LaunchIntent open a game
+LaunchIntent play the game
+LaunchIntent start the game
+LaunchIntent launch the game
+LaunchIntent open the game
+LaunchIntent play  please
+LaunchIntent start  please
+LaunchIntent launch  please
+LaunchIntent open  please
+LaunchIntent play
 LaunchIntent start
+LaunchIntent launch
 LaunchIntent open
+LaunchIntent manage my kingdom please
+LaunchIntent manage my fiefdom please
+LaunchIntent manage my city please
+LaunchIntent manage my realm please
+LaunchIntent manage my domain please
 LaunchIntent manage my kingdom
 LaunchIntent manage my fiefdom
 LaunchIntent manage my city
@@ -121,6 +148,9 @@ BuyWithRestIntent acquire with whats left please
 BuyWithRestIntent buy with whats left
 BuyWithRestIntent purchase with whats left
 BuyWithRestIntent acquire with whats left
+BuyWithRestIntent buy with the rest
+BuyWithRestIntent purchase with the rest
+BuyWithRestIntent acquire with the rest
 BuyWithRestIntent use the rest to buy acres please
 BuyWithRestIntent use the rest to buy acres of land please
 BuyWithRestIntent use the rest to buy parcels please
@@ -139,6 +169,30 @@ BuyWithRestIntent use the rest to buy plots
 BuyWithRestIntent use the rest to buy plots of land
 BuyWithRestIntent use the rest to buy please
 BuyWithRestIntent use the rest to buy
+BuyWithRestIntent buy every acres possible
+BuyWithRestIntent purchase every acres possible
+BuyWithRestIntent acquire every acres possible
+BuyWithRestIntent buy every acres of land possible
+BuyWithRestIntent purchase every acres of land possible
+BuyWithRestIntent acquire every acres of land possible
+BuyWithRestIntent buy every parcels possible
+BuyWithRestIntent purchase every parcels possible
+BuyWithRestIntent acquire every parcels possible
+BuyWithRestIntent buy every parcels of land possible
+BuyWithRestIntent purchase every parcels of land possible
+BuyWithRestIntent acquire every parcels of land possible
+BuyWithRestIntent buy every lots possible
+BuyWithRestIntent purchase every lots possible
+BuyWithRestIntent acquire every lots possible
+BuyWithRestIntent buy every lots of land possible
+BuyWithRestIntent purchase every lots of land possible
+BuyWithRestIntent acquire every lots of land possible
+BuyWithRestIntent buy every plots possible
+BuyWithRestIntent purchase every plots possible
+BuyWithRestIntent acquire every plots possible
+BuyWithRestIntent buy every plots of land possible
+BuyWithRestIntent purchase every plots of land possible
+BuyWithRestIntent acquire every plots of land possible
 
 
 SellIntent sell {acresCnt} acres please
@@ -487,6 +541,12 @@ PlantAllIntent seed everything
 PlantAllIntent plant with the rest
 PlantAllIntent sow with the rest
 PlantAllIntent seed with the rest
+PlantAllIntent plant food
+PlantAllIntent sow food
+PlantAllIntent seed food
+PlantAllIntent plant
+PlantAllIntent sow
+PlantAllIntent seed
 
 PlantNothingIntent plant nothing
 PlantNothingIntent sow nothing
@@ -877,12 +937,18 @@ NextYearIntent that's it
 NextYearIntent that's all
 NextYearIntent done
 NextYearIntent I'm done
+NextYearIntent all done
 NextYearIntent next year
 NextYearIntent go to next year
 NextYearIntent what happens next
 NextYearIntent see what happens next
 NextYearIntent iterate
 NextYearIntent end the year
+NextYearIntent nothing
+NextYearIntent nothing else
+NextYearIntent nada
+NextYearIntent pass
+NextYearIntent move on
 
 AMAZON.HelpIntent about this skill
 AMAZON.HelpIntent about this skill please
@@ -1011,6 +1077,8 @@ AMAZON.HelpIntent what do you do
 AMAZON.HelpIntent what questions can i ask
 AMAZON.HelpIntent learn more about this skill
 AMAZON.HelpIntent teach me more about this skill
+AMAZON.HelpIntent do i have to feed my people
+AMAZON.HelpIntent how do i plant food
 
 AMAZON.CancelIntent cancel
 AMAZON.CancelIntent never mind

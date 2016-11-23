@@ -6,7 +6,7 @@ var gulp = require('gulp')
     , nodemon = require('gulp-nodemon')
     , debug = require('gulp-debug')
     , rimraf = require('gulp-rimraf')
-//    , UtteranceExpaander = require('alexa-definition-author/utterances/UtteranceExpander')
+    , UtteranceExpaander = require('alexa-utterance-expander')
     , zip = require('gulp-zip')
     , run = require('gulp-run')
     , fs = require('fs')
@@ -45,10 +45,10 @@ gulp.task('zip',['clean'], function(cb){
     .pipe(gulp.dest('archives'));
 });
 
-// gulp.task('compile', function (cb) {
-//   fs.readFile(path.join(__dirname,'interaction-model','utterances-src.txt'),function(err,file){
-//     if(err) return cb(err);
-//     var expanded = UtteranceExpaander(file);
-//     fs.writeFile(path.join(__dirname,'interaction-model','utterances.txt'),expanded,cb);
-//   });
-// });
+ gulp.task('compile', function (cb) {
+   fs.readFile(path.join(__dirname,'interaction-model','utterances-src.txt'),function(err,file){
+     if(err) return cb(err);
+     var expanded = UtteranceExpaander(file);
+     fs.writeFile(path.join(__dirname,'interaction-model','utterances.txt'),expanded,cb);
+   });
+ });

@@ -22,11 +22,17 @@
 [kingdom] realm
 [kingdom] domain
 
-LaunchIntent play a game
-LaunchIntent launch
-LaunchIntent start
-LaunchIntent open
-LaunchIntent manage my [kingdom]
+[article] a
+[article] the
+
+[play] play
+[play] start
+[play] launch
+[play] open
+
+LaunchIntent [play] [article] game [PLEASE]
+LaunchIntent [play]  [PLEASE]
+LaunchIntent manage my [kingdom] [PLEASE]
 
 [buy] buy
 [buy] purchase

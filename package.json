@@ -15,6 +15,7 @@
   },
   "license": "UNLIECENSED",
   "dependencies": {
+    "alexa-utterance-expander": "^1.0.0",
     "bluebird": "^3.3.1",
     "body-parser": "^1.14.2",
     "express": "^4.13.4",
