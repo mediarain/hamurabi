@@ -2,7 +2,7 @@
 
 var _ = require('lodash')
   , Promise = require('bluebird')
-  , lang = require('./lang.js')
+  , lang = require('alexa-helpers').lang
   , gameParams = require('../config').game
   ;
 

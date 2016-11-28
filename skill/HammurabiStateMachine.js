@@ -1,12 +1,12 @@
 'use strict';
 
-var StateMachine = require('./StateMachine.js')
-  , Reply = require('./Reply.js')
+var StateMachine = require('alexa-statemachine').stateMachine
+  , Reply = require('alexa-helpers').reply
   , config = require('../config')
-  , StateMachineSkill = require('./StateMachineSkill.js')
+  , StateMachineSkill = require('alexa-statemachine').stateMachineSkill
   , _ = require('lodash')
   , responses = require('./responses.js')
-  , messageRenderer = require('./message-renderer.js')(responses, require('./variables.js'))
+  , messageRenderer = require('alexa-helpers').messageRenderer(responses, require('./variables.js'))
   , verbose = config.verbose
   , Promise = require('bluebird')
   , HammurabiGame = require('../services/HammurabiGame')
@@ -28,7 +28,7 @@ module.exports = StateMachine({
   onBadResponse: function onBadResponse(request) {
     var reprompt = request.session.attributes.reprompt;
     if (reprompt) { return { ask: reprompt }; }
-    return _.at(responses, 'Errors.BadLaunch')[0];
+    return new Reply(_.at(responses, 'Errors.BadLaunch')[0]);
   },
   onError: function onError(request, error) {
     var self = this;

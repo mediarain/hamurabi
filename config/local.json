@@ -4,7 +4,7 @@
     "hostSkill": true
   },
   "alexa": {
-    "appId": "amzn1.echo-sdk-ams.app.63fdbdad-fc0a-48d5-bfaf-7cf400f180f2"
+    "appId": "amzn1.echo-sdk-ams.app.230fbb7e-3d46-47fc-96df-ddd3a60a47f6"
   },
   "game": {
     "bushelsToFeedPerson": 20,

@@ -1,5 +1,5 @@
 'use strict';
-var StateMachineSkill = require('./StateMachineSkill.js')
+var StateMachineSkill = require('alexa-statemachine').stateMachineSkill
   , HammurabiStateMachine = require('./HammurabiStateMachine.js')
   , config = require('../config')
 ;
