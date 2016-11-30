@@ -12,10 +12,12 @@ var StateMachine = require('alexa-statemachine').stateMachine
   , HammurabiGame = require('../services/HammurabiGame')
   , Command = require('../services/Command')
   , gameParams = config.game
+  , VoiceInsights = require('voice-insights-sdk')
 ;
 
 module.exports = StateMachine({
   onTransition: function onTransition(trans, request) {
+    VoiceInsights.track(request.intent.name,request.intent.slots,trans.reply ? trans.reply.render().say.speech : null);
     if (trans.reply) {
       var reprompt = trans.reply.msg.reprompt;
       if (reprompt) {
@@ -24,6 +26,9 @@ module.exports = StateMachine({
       }
     }
     request.session.attributes.reprompt = null;
+  },
+  onSessionStart: function onBadResponse(request,session) {
+    VoiceInsights.initialize(request.session,config.voiceinsights.token);
   },
   onBadResponse: function onBadResponse(request) {
     var reprompt = request.session.attributes.reprompt;
