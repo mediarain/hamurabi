@@ -4,7 +4,8 @@
     "hostSkill": true
   },
   "alexa": {
-    "appId": "amzn1.echo-sdk-ams.app.230fbb7e-3d46-47fc-96df-ddd3a60a47f6"
+    "appId": "amzn1.echo-sdk-ams.app.230fbb7e-3d46-47fc-96df-ddd3a60a47f6",
+    "verbose": true
   },
   "voiceinsights": { "token": "26ff71dd-53d1-3f18-b6fc-d136ee2992a8" },
   "game": {

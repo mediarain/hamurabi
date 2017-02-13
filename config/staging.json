@@ -5,7 +5,7 @@
   "alexa": {
     "appId": "amzn1.echo-sdk-ams.app.63fdbdad-fc0a-48d5-bfaf-7cf400f180f2"
   },
-  "voicelabs": { "token": "26ff71dd-53d1-3f18-b6fc-d136ee2992a8" },
+  "voiceinsights": { "token": "2cc52a90-ecba-11a6-2e36-0e2486876586" },
   "game": {
     "bushelsToFeedPerson": 20,
     "acresPersonWorks": 10,

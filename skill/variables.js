@@ -6,115 +6,115 @@ var _ = require('lodash')
   , gameParams = require('../config').game
   ;
 
-exports.accident = function(game,cmd) {
+exports.accident = function(game) {
   return _.sample(['fire','earthquake','hurricane','tornado','tsunami','alien invasion','mole men attack']);
 }
 
-exports.mostCanBuyAcres = function(game,cmd) {
-  return lang.quantify(cmd.mostCanBuy(game),'acre');
+exports.mostCanBuyAcres = function(game) {
+  return lang.quantify(game.command.mostCanBuy(game),'acre');
 }
 
-exports.mostCanSellAcres = function(game,cmd) {
-  return lang.quantify(cmd.mostCanSell(game),'acre');
+exports.mostCanSellAcres = function(gam) {
+  return lang.quantify(game.command.mostCanSell(game),'acre');
 }
 
-exports.leastCanSellAcres = function(game,cmd) {
-  return lang.quantify(cmd.leastCanSell(game),'acre');
+exports.leastCanSellAcres = function(game) {
+  return lang.quantify(game.command.leastCanSell(game),'acre');
 }
 
-exports.mostCanFeedPeople = function(game,cmd) {
-  return lang.quantify(cmd.mostCanFeed(game),'person','people');
+exports.mostCanFeedPeople = function(game) {
+  return lang.quantify(game.command.mostCanFeed(game),'person','people');
 }
 
-exports.mostCanPlantAcres = function(game,cmd) {
-  return lang.quantify(cmd.mostCanPlant(game),'acre');
+exports.mostCanPlantAcres = function(game) {
+  return lang.quantify(game.command.mostCanPlant(game),'acre');
 }
 
-exports.mostCanPlantBushels = function(game,cmd) {
-  return lang.quantify(cmd.mostCanPlant(game),'bushel');
+exports.mostCanPlantBushels = function(game) {
+  return lang.quantify(game.command.mostCanPlant(game),'bushel');
 }
 
-exports.acresCost = function(game,cmd) {
+exports.acresCost = function(game) {
   return lang.quantify(game.acresCost,'bushel');
 }
 
-exports.buyAcres = function(game,cmd) {
-  return lang.quantify(Math.abs(cmd.buy),'acre');
+exports.buyAcres = function(game) {
+  return lang.quantify(Math.abs(game.command.buy),'acre');
 }
 
-exports.sellAcres = function(game,cmd) {
-  return lang.quantify(-1 * cmd.buy,'acre');
+exports.sellAcres = function(game) {
+  return lang.quantify(-1 * game.command.buy,'acre');
 }
 
-exports.attemptedSellAcres = function(game,cmd) {
-  return lang.quantify(-1 * cmd.attemptedBuy,'acre');
+exports.attemptedSellAcres = function(game) {
+  return lang.quantify(-1 * game.command.attemptedBuy,'acre');
 }
 
-exports.buyBushels = function(game,cmd) {
-  return lang.quantify(cmd.buy * game.acresCost,'bushel');
+exports.buyBushels = function(game) {
+  return lang.quantify(game.command.buy * game.acresCost,'bushel');
 }
 
-exports.sellBushels = function(game,cmd) {
-  return lang.quantify(-1 * cmd.buy * game.acresCost,'bushel');
+exports.sellBushels = function(game) {
+  return lang.quantify(-1 * game.command.buy * game.acresCost,'bushel');
 }
 
-exports.feedPeople = function(game,cmd) {
-  return lang.quantify(cmd.feed,'person','people');
+exports.feedPeople = function(game) {
+  return lang.quantify(game.command.feed,'person','people');
 }
 
-exports.starvePeople = function(game,cmd) {
-  return lang.quantify(game.population - cmd.feed,'person','people');
+exports.starvePeople = function(game) {
+  return lang.quantify(game.population - game.command.feed,'person','people');
 }
 
-exports.populationPeople = function(game,cmd) {
+exports.populationPeople = function(game) {
   return lang.quantify(game.population,'person','people');
 }
 
-exports.feedBushels = function(game,cmd) {
-  return lang.quantify(cmd.feed * gameParams.bushelsToFeedPerson,'bushel');
+exports.feedBushels = function(game) {
+  return lang.quantify(game.command.feed * gameParams.bushelsToFeedPerson,'bushel');
 }
 
-exports.plantAcres = function(game,cmd) {
-  return lang.quantify(cmd.plant,'acre');
+exports.plantAcres = function(game) {
+  return lang.quantify(game.command.plant,'acre');
 }
 
-exports.plantBushels = function(game,cmd) {
-  return lang.quantify(cmd.plant,'bushel');
+exports.plantBushels = function(game) {
+  return lang.quantify(game.command.plant,'bushel');
 }
 
-exports.bushels = function(game,cmd) {
+exports.bushels = function(game) {
   return lang.quantify(game.bushels,'bushel');
 }
 
-exports.acres = function(game,cmd) {
+exports.acres = function(game) {
   return lang.quantify(game.acres,'acre');
 }
 
-exports.acresUnused = function(game,cmd) {
-  return lang.quantify(cmd.acresLeft(game),'unused acres');
+exports.acresUnused = function(game) {
+  return lang.quantify(game.command.acresLeft(game),'unused acres');
 }
 
-exports.bushelsUnused = function(game,cmd) {
-  return lang.quantify(cmd.bushelsLeft(game),'unused bushel');
+exports.bushelsUnused = function(game) {
+  return lang.quantify(game.command.bushelsLeft(game),'unused bushel');
 }
 
-exports.bushelsLeft = function(game,cmd) {
-  return lang.quantify(cmd.bushelsLeft(game),'bushel') + ' left';
+exports.bushelsLeft = function(game) {
+  return lang.quantify(game.command.bushelsLeft(game),'bushel') + ' left';
 }
 
-exports.bushelsRemaining = function(game,cmd) {
-  return lang.quantify(cmd.bushelsLeft(game),'remaining bushel');
+exports.bushelsRemaining = function(game) {
+  return lang.quantify(game.command.bushelsLeft(game),'remaining bushel');
 }
 
-exports.commandStatus = function(game,cmd) {
+exports.commandStatus = function(game) {
   var statements = [];
-  if(cmd.buy > 0) statements.push("You're buying " + exports.buyAcres(game,cmd) +'.')
-  if(cmd.buy < 0) statements.push("You're selling " + exports.buyAcres(game,cmd) +'.')
-  if(cmd.plant) statements.push("You're planting " + exports.plantAcres(game,cmd) +'.')
-  if(cmd.feed) statements.push("You're feeding " + exports.feedPeople(game,cmd) +'.')
+  if(game.command.buy > 0) statements.push("You're buying " + exports.buyAcres(game,game.command) +'.')
+  if(game.command.buy < 0) statements.push("You're selling " + exports.buyAcres(game,game.command) +'.')
+  if(game.command.plant) statements.push("You're planting " + exports.plantAcres(game,game.command) +'.')
+  if(game.command.feed) statements.push("You're feeding " + exports.feedPeople(game,game.command) +'.')
 
-  if(!statements.length) return "You've got no plans yet this year and have " + exports.bushels(game,cmd) +  ".";
-  return statements.join('\n') + "\nYou've got " + exports.bushelsRemaining(game,cmd)+".";
+  if(!statements.length) return "You've got no plans yet this year and have " + exports.bushels(game,game.command) +  ".";
+  return statements.join('\n') + "\nYou've got " + exports.bushelsRemaining(game,game.command)+".";
 }
 
 exports.kingdomStatus = function(game) {

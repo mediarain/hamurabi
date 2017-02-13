@@ -15,11 +15,11 @@
   },
   "license": "UNLIECENSED",
   "dependencies": {
-    "alexa-helpers": "^1.1.3",
-    "alexa-statemachine": "^0.3.3",
+    "alexa-statemachine": "armonge/alexa-statemachine",
     "alexa-utterance-expander": "^1.0.0",
     "bluebird": "^3.3.1",
     "body-parser": "^1.14.2",
+    "colors": "^1.1.2",
     "express": "^4.13.4",
     "lodash": "^4.2.1",
     "morgan": "^1.6.1",
