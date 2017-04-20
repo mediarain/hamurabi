@@ -8,7 +8,7 @@ module.exports = {
       "applicationId": "amzn1.echo-sdk-ams.app.230fbb7e-3d46-47fc-96df-ddd3a60a47f6"
     },
     "attributes": {
-      "game": {
+      "modelData": {
         "year": 3,
         "population": 118,
         "bushels": 2012,
@@ -21,16 +21,16 @@ module.exports = {
         "peopleDied": 0,
         "percentPopDied": 0,
         "totalDied": 0,
-        "hadPlague": false
+        "hadPlague": false,
+        "command": {
+          "buy": -100,
+          "feed": 118,
+          "plant": 938,
+          "attemptedBuy": -100
+        }
       },
       "reprompt": "You can use bushels to feed your people, plant land, or buy and sell acres.",
-      "state": "query-action",
-      "command": {
-        "buy": -100,
-        "feed": 118,
-        "plant": 938,
-        "attemptedBuy": -100
-      }
+      "state": "query-action"
     },
     "user": {
       "userId": "amzn1.ask.account.AFP3ZWPOS2BGJR7OWJZ3DHPKMOMNWY4AY66FUR7ILBWANIHQN73QHNAC57NUK2AWEKXYX447OJZ36E6O7YZYZG4KTKWOVQ4UCETMYB73ZX272Y6AGLU4Q5KD3H3GMPCP67FCXCICYUMIDC3KZI35NTO3IAFE6YPZMKCIGYLEUWTSTPAUCFSDE47CFVAHQG46MXGOBN2IDF3NWSI"

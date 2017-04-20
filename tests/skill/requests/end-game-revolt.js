@@ -6,8 +6,7 @@ module.exports = {
     "sessionId": "SessionId.42c9fd44-0aa3-4754-a95b-2f56d6424e2a",
     "application": {},
     "attributes": {
-      "game": _.assign(init,{acresCost: 20}),
-      "command":{plant: 0, feed: 0, buy: 0},
+      "modelData": _.assign(init,{acresCost: 20,command: {plant: 0, feed: 0, buy: 0}}),
       "state": "query-action"
     },
     "user": {},

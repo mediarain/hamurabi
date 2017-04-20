@@ -9,6 +9,7 @@
   "game": {
     "bushelsToFeedPerson": 20,
     "acresPersonWorks": 10,
+    "gameDurationYears": 10,
     "init": {
       "year": 1,
       "population": 100,

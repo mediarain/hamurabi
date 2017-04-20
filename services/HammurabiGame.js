@@ -1,15 +1,15 @@
 'use strict'
-var config = require('../config/')
+var config = require('../config')
   , _ = require('lodash')
   , gameParams = config.game
-  , Command = require('./command')
+  , Command = require('./Command')
 ;
 
 class HammurabiGame {
 
   constructor (state) {
     _.assign(this,state);
-    this.command = new Command(state.command);
+    this.command = new Command(state ? state.command : null);
   }
 
   serialize() {
@@ -69,10 +69,23 @@ class HammurabiGame {
     return next;
   }
 
-  static fromRequest(request) {
-    const data = _.get(request,'session.attributes.data');
-    if(data) return new HammurabiGame(data);
-    return null;
+  get acresPerPerson() {
+    return Math.round(this.acres / (this.population || 1 ))
+  }
+
+  get ranking() {
+    if (this.percentPopDied > 33 || this.acresPerPerson < 7) return 'lose';
+    if (this.percentPopDied > 10 || this.acresPerPerson < 9) return 'worst';
+    if (this.percentPopDied > 3 || this.acresPerPerson < 10) return 'ok';
+    return 'best';
+  }
+
+  static fromEvent(event) {
+    return this.fromData(_.get(event,'session.attributes.modelData'))
+  }
+
+  static fromData(data) {
+    return new HammurabiGame(data);
   }
 
   static create() {

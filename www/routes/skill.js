@@ -17,6 +17,14 @@ if (config.server.hostSkill) {
         //if(config.verbose) console.log('Skill yields',JSON.stringify(msg,null,2));
         res.json(msg);
       }
+    },function(err,msg){
+      if(err) {
+          res.status(500);
+          res.json(e);
+      }
+      else {
+        res.json(msg);
+      }
     });
   });
 }

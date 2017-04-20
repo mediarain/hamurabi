@@ -14,7 +14,7 @@ exports.mostCanBuyAcres = function(game) {
   return lang.quantify(game.command.mostCanBuy(game),'acre');
 }
 
-exports.mostCanSellAcres = function(gam) {
+exports.mostCanSellAcres = function(game) {
   return lang.quantify(game.command.mostCanSell(game),'acre');
 }
 
@@ -39,10 +39,12 @@ exports.acresCost = function(game) {
 }
 
 exports.buyAcres = function(game) {
+  if(game.command.buy === 0) return 'no acres';
   return lang.quantify(Math.abs(game.command.buy),'acre');
 }
 
 exports.sellAcres = function(game) {
+  if(game.command.buy === 0) return 'no acres';
   return lang.quantify(-1 * game.command.buy,'acre');
 }
 
@@ -145,7 +147,7 @@ exports.finalKingdomStatus = function(game) {
       "DUE TO THIS EXTREME MISMANAGEMENT YOU HAVE NOT ONLY\n" +
       "BEEN IMPEACHED AND THROWN OUT OF OFFICE BUT YOU HAVE\n" +
       "ALSO BEEN DECLARED NATIONAL FINK!!\n" + despedida
-  , acresPerPerson = Math.round(game.acres / game.population)
+  , acresPerPerson = game.acresPerPerson
 ;
 
   if(game.hasRevolt) {

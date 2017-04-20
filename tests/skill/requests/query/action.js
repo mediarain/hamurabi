@@ -6,12 +6,11 @@ module.exports = {
     "sessionId": "SessionId.42c9fd44-0aa3-4754-a95b-2f56d6424e2a",
     "application": {},
     "attributes": {
-      "game": _.assign(init,{acresCost: 20}),
-      "command":{
+      "modelData": Object.assign(init , {acresCost: 20,"command": {
         plant: 20,
         buy: 2,
         feed: 20,
-      },
+      }}) ,
       "state": "query-action"
     },
     "user": {},

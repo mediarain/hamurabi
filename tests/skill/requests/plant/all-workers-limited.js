@@ -6,9 +6,8 @@ module.exports = {
     "sessionId": "SessionId.42c9fd44-0aa3-4754-a95b-2f56d6424e2a",
     "application": {},
     "attributes": {
-      "game": _.assign(init,{population: 20}),
+      "modelData": Object.assign(init , { population: 20, "command": { feed: 0 } }) ,
       "state": "query-action",
-      "command": { feed: 0 }
     },
     "user": {},
     "new": false

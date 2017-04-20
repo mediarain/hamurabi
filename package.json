@@ -15,7 +15,7 @@
   },
   "license": "UNLIECENSED",
   "dependencies": {
-    "alexa-statemachine": "armonge/alexa-statemachine",
+    "alexa-helpers": "^1.1.5",
     "alexa-utterance-expander": "^1.0.0",
     "bluebird": "^3.3.1",
     "body-parser": "^1.14.2",
@@ -24,7 +24,10 @@
     "lodash": "^4.2.1",
     "morgan": "^1.6.1",
     "string": "^3.3.1",
-    "voice-insights-sdk": "^1.2.1"
+    "voice-insights-sdk": "^1.2.1",
+    "voxa": "^2.0.0",
+    "voxa-opearlo": "^0.2.0",
+    "voxa-ga": "file:../voxa-ga"
   },
   "devDependencies": {
     "chai": "^3.5.0",

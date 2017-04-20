@@ -1,22 +1,18 @@
 'use strict';
-var Reply = require('alexa-stateMachine').Reply
-  , config = require('../config')
+var config = require('../config')
   , _ = require('lodash')
   , verbose = config.verbose
   , HammurabiGame = require('../services/HammurabiGame')
-  , Command = require('../services/Command')
   , gameParams = config.game
 ;
 
 module.exports = function(skill) {
 
-  skill.onState('entry',{
-    to: {
+  skill.onState('entry', {
       'LaunchIntent': 'launch',
       'AMAZON.HelpIntent': 'cold-help',
       'AMAZON.StartOverIntent': 'query-startover',
       'AMAZON.StopIntent': 'query-exit'
-    }
   });
 
   skill.onState('query-startover',function(request) {
@@ -73,10 +69,17 @@ module.exports = function(skill) {
 
   skill.onState('report',function(request) {
     var game = request.model;
-    if(game.year >= 11 || game.hasRevolt)  return {reply: 'FinalReport',to: 'die'};
+    if(game.hasRevolt){
+      request.opearlo.log('revolt',{year: game.year, peopleDied: game.peopleDied})
+      request.ga.event('Game','Revolt',undefined,game.year);
+    }
+    if(game.year >= gameParams.gameDurationYears) request.opearlo.log('win',{ranking: game.ranking})
+    if(game.year >= gameParams.gameDurationYears || game.hasRevolt)  return {reply: 'FinalReport',to: 'die'};
     return {reply: 'Report',to: 'query-action'};
   })
   skill.onState('action',function(request) {
+    //request.opearlo.ignore();
+    request.ga.ignore();
     return {reply: 'Actions.PromptMore',to: 'query-action'};
   });
   skill.onState('query-action', function(request) {
@@ -151,6 +154,8 @@ module.exports = function(skill) {
       return {to: 'report'};
     }
     else if(request.intent.name == "NextYearIntent") {
+      Object.assign(request.opearlo.variables,command);
+      Object.assign(request.opearlo.variables,game);
       request.model = game.iterate(command);
       return {to: 'report'};
     }

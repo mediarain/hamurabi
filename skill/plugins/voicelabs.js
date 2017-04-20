@@ -18,6 +18,7 @@ module.exports = function(skill,config) {
   skill.onBeforeReplySent(function(request, reply) {
     let msg = reply.render().say.speech;
     VoiceInsights.initialize(request.session,config.token); //The VoiceInsights library uses global state to track the session id :( so we register the session before each track event
+    console.log(msg);
     VoiceInsights.track(_.last(reply.paths),request.intent.slots,msg);
   })
 

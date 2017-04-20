@@ -13,7 +13,7 @@ var responses = function () {
         tell: "Oh no! You're empire was destroyed by a devastating {accident}. Try again."
       },
       BadLaunch: {
-        tell: "I've got no idea what you're trying to do. If you want to play Hammurabi, say Alexa, play Hammurabi"
+        tell: "I've got no idea what you're trying to do. If you want to play Hammurabi, say Alexa, play Hammurabi's Kingdom"
       },
     },
     "Actions": {
@@ -116,14 +116,14 @@ var responses = function () {
              "Or you can sell land by saying \"Sell {mostCanSellAcres}\". " +
              "Or you can buy land by saying \"Buy {mostCanBuyAcres}\". " +
              "Or you can move on to the next year by saying \"go to the next year\". " +
-             "Be sure to feed your people and plant food for the next year."
+             "Be sure to feed your people and plant food for the next year.",
       },
       "ExplainGame": {
         ask: "Hammurabi is one of the first games made for terminal computers.\n" +
           "In Hammurabi you manage a kingdom.\n" +
           "Each year you must carefully balance how many bushels you'll use to feed your workers, and how much you'll plant for the next year.\n" +
           "With famine years, plagues, and rats, it'll be a challenge to prevent revolts and prepare for the next year.\n" +
-          "Do want to give it a try?"
+          "Do want to give it a try?",
       }
     },
     "Query": {

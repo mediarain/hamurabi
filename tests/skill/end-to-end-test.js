@@ -15,44 +15,45 @@ describe('end to end',function(){
   })
 
   itIs('buy-valid',function(res){
+    console.log(res);
     assert.match(res.response.outputSpeech.ssml,/You're buying 5 acres./i);
     assert.equal(res.sessionAttributes.state,'query-action');
-    assert.equal(res.sessionAttributes.command.buy,5);
-    assert.equal(res.sessionAttributes.game.year,1);
+    assert.equal(res.sessionAttributes.modelData.command.buy,5);
+    assert.equal(res.sessionAttributes.modelData.year,1);
   });
 
   itIs('buy-error-bushels',function(res){
     assert.match(res.response.outputSpeech.ssml,/The most you .* buy is \d+ acres/i);
     assert.equal(res.sessionAttributes.state,'query-action');
-    assert.notOk(res.sessionAttributes.command.buy);
-    assert.equal(res.sessionAttributes.game.year,1);
+    assert.notOk(res.sessionAttributes.modelData.command.buy);
+    assert.equal(res.sessionAttributes.modelData.year,1);
   });
 
   itIs('buy-error-bushels-with-command',function(res){
     assert.match(res.response.outputSpeech.ssml,/40 acres/i);
     assert.equal(res.sessionAttributes.state,'query-action');
-    assert.notOk(res.sessionAttributes.command.buy);
-    assert.equal(res.sessionAttributes.command.feed,100);
-    assert.equal(res.sessionAttributes.game.year,1);
+    assert.notOk(res.sessionAttributes.modelData.command.buy);
+    assert.equal(res.sessionAttributes.modelData.command.feed,100);
+    assert.equal(res.sessionAttributes.modelData.year,1);
   });
 
   itIs('buy-with-rest',function(res){
     assert.match(res.response.outputSpeech.ssml,/With the rest of your bushels, you buy 164 acres./i);
     assert.equal(res.sessionAttributes.state,'query-action');
-    assert.equal(res.sessionAttributes.command.buy,164);
-    assert.equal(res.sessionAttributes.game.year,1);
+    assert.equal(res.sessionAttributes.modelData.command.buy,164);
+    assert.equal(res.sessionAttributes.modelData.year,1);
   });
 
   itIs('sell-error-acres-with-command',function(res){
     assert.match(res.response.outputSpeech.ssml,/planting 999 acres/i);
     assert.equal(res.sessionAttributes.state,'query-action');
-    assert.notOk(res.sessionAttributes.command.buy);
-    assert.equal(res.sessionAttributes.command.plant,999);
-    assert.equal(res.sessionAttributes.game.year,1);
+    assert.notOk(res.sessionAttributes.modelData.command.buy);
+    assert.equal(res.sessionAttributes.modelData.command.plant,999);
+    assert.equal(res.sessionAttributes.modelData.year,1);
   });
 
   itIs('feed-everyone',function(res){
-    assert.equal(res.sessionAttributes.command.feed,90);
+    assert.equal(res.sessionAttributes.modelData.command.feed,90);
     assert.match(res.response.outputSpeech.ssml,/90 people/i);
     assert.match(res.response.outputSpeech.ssml,/10 people will starve/i);
   });
@@ -63,8 +64,8 @@ describe('end to end',function(){
 
   itIs('does-not-error-when-selling-lots',function(res){
     assert.isFalse(res.response.shouldEndSession);
-    assert.equal(res.sessionAttributes.game.year,4);
-    assert.equal(res.sessionAttributes.game.acres,938);
+    assert.equal(res.sessionAttributes.modelData.year,4);
+    assert.equal(res.sessionAttributes.modelData.acres,938);
   });
 
   itIs('cold-help',function(res){
@@ -74,22 +75,22 @@ describe('end to end',function(){
   itIs('plant/error-bushels-with-command',function(res){
     assert.match(res.response.outputSpeech.ssml,/800 bushels/i);
     assert.equal(res.sessionAttributes.state,'query-action');
-    assert.notOk(res.sessionAttributes.command.plant);
-    assert.equal(res.sessionAttributes.game.year,1);
+    assert.notOk(res.sessionAttributes.modelData.command.plant);
+    assert.equal(res.sessionAttributes.modelData.year,1);
   });
 
   itIs('plant/all-acres-limited',function(res){
-    assert.equal(res.sessionAttributes.command.plant,1000);
+    assert.equal(res.sessionAttributes.modelData.command.plant,1000);
     assert.match(res.response.outputSpeech.ssml,/You're planting all 1000 acres and have 1800 bushels/i);
   });
 
   itIs('plant/all-bushels-limited',function(res){
-    assert.equal(res.sessionAttributes.command.plant,500);
+    assert.equal(res.sessionAttributes.modelData.command.plant,500);
     assert.match(res.response.outputSpeech.ssml,/With the rest of your bushels, you plant 500 acres/i);
   });
 
   itIs('plant/all-workers-limited',function(res){
-    assert.equal(res.sessionAttributes.command.plant,200);
+    assert.equal(res.sessionAttributes.modelData.command.plant,200);
     assert.match(res.response.outputSpeech.ssml,/You plant 200 acres/);
     assert.match(res.response.outputSpeech.ssml,/most you can work with 20 people/);
     assert.match(res.response.outputSpeech.ssml,/you have 2600 bushels left/i);
@@ -97,7 +98,7 @@ describe('end to end',function(){
   });
 
   itIs('plant/nothing',function(res){
-    assert.equal(res.sessionAttributes.command.plant,0);
+    assert.equal(res.sessionAttributes.modelData.command.plant,0);
     assert.match(res.response.outputSpeech.ssml,/You plant nothing. I fear/);
   });
 
@@ -122,13 +123,12 @@ describe('end to end',function(){
     it(requestFile,function(done){
       var event = require('./requests/'+requestFile  + '.js');
       event.session.application.applicationId = config.alexa.appId;
-      skill.handler(event, {
-        succeed: function(response){
-          try{ cb(response); }
-          catch(e) { return done (e);}
-          done();
-        },
-        fail: done
+      skill.handler(event, {},function(err,res){
+        if(err) return done(err);
+        res  = res.toJSON();
+        try{ cb(res); }
+        catch(e) { return done (e);}
+        done();
       });
     });
   }
