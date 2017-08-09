@@ -8,13 +8,13 @@
     "verbose": true
   },
   "voiceinsights": { "token": "26ff71dd-53d1-3f18-b6fc-d136ee2992a8" },
-  "opearlo": {
+  "opearlo2": {
     "userId": "8DfRfzarefUAQ18Yy93Z5SKxIzE2",
     "appName": "hamurabi",
     "apiKey": "UHyFvdBYiZ1VNbifg0kjwEOdpZGDsda3rBnoFJBd"
   },
   "google_analytics": {
-    "trackingId": "UA-80329557-9",
+    "trackingId": "UA-80329557-14",
     "debug": true,
     "appName": "hamurabi",
     "appVersion": "1.1"
@@ -22,7 +22,7 @@
   "game": {
     "bushelsToFeedPerson": 20,
     "acresPersonWorks": 10,
-    "gameDurationYears": 3,
+    "gameDurationYears": 10,
     "init": {
       "year": 1,
       "population": 100,

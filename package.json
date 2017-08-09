@@ -26,8 +26,8 @@
     "string": "^3.3.1",
     "voice-insights-sdk": "^1.2.1",
     "voxa": "^2.0.0",
-    "voxa-opearlo": "^0.2.0",
-    "voxa-ga": "file:../voxa-ga"
+    "voxa-ga": "^1.0.1",
+    "voxa-opearlo": "^0.2.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
