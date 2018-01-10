@@ -1,10 +1,10 @@
 'use strict';
-var config = require('../config')
-  , _ = require('lodash')
-  , verbose = config.verbose
-  , HammurabiGame = require('../services/HammurabiGame')
-  , gameParams = config.game
-;
+
+const config = require('../config');
+const _ = require('lodash');
+const verbose = config.verbose;
+const HammurabiGame = require('../services/HammurabiGame');
+const gameParams = config.game;
 
 module.exports = function(skill) {
 
@@ -16,7 +16,7 @@ module.exports = function(skill) {
   });
 
   skill.onState('query-startover',function(request) {
-    var hasPriorGame = !!request.session.attributes.game;
+    const hasPriorGame = !!request.session.attributes.game;
     if(hasPriorGame) return {reply: 'StartOverQuery', to: 'startover'};
     else return {to: 'launch'};
   });
@@ -61,14 +61,14 @@ module.exports = function(skill) {
   });
 
   skill.onState('launch',function(request) {
-    var hasPriorGame = !!request.session.attributes.game;
+    const hasPriorGame = !!request.session.attributes.game;
     if(hasPriorGame) return {to: 'query-startover'};
     request.model = HammurabiGame.create();
     return {reply: 'Welcome',to: 'report'};
     });
 
   skill.onState('report',function(request) {
-    var game = request.model;
+    const game = request.model;
     if(game.hasRevolt){
       request.opearlo.log('revolt',{year: game.year, peopleDied: game.peopleDied})
       request.ga.event('Game','Revolt',undefined,game.year);
@@ -83,10 +83,10 @@ module.exports = function(skill) {
     return {reply: 'Actions.PromptMore',to: 'query-action'};
   });
   skill.onState('query-action', function(request) {
-    var game = request.model;
-    var command = game.command;
+    const game = request.model;
+    const command = game.command;
     if(request.intent.name == 'BuyIntent' || request.intent.name == 'SellIntent') {
-      var acres = +request.intent.params.acresCnt
+      let acres = +request.intent.params.acresCnt
         , isSell = request.intent.name == 'SellIntent'
         , action = isSell ? 'Sell' : 'Buy'
       ;
@@ -97,17 +97,17 @@ module.exports = function(skill) {
       return {reply: 'Actions.Validate.' + action, to: 'action'};
     }
     else if(request.intent.name == 'BuyWithRestIntent') {
-      var acres = +command.mostCanBuy(game) ;
+      const acres = +command.mostCanBuy(game) ;
       command.buy = acres;
       if(!acres) return {reply: 'Actions.Errors.BuyWithRest.InsufficientBushels',to: 'action'};
       return {reply: 'Actions.Validate.BuyWithRest',to: 'action'};
     }
     else if(request.intent.name == 'FeedPeopleIntent') {
-      var feed = +request.intent.params.peopleCnt;
+      const feed = +request.intent.params.peopleCnt;
       command.attemptedFeed = feed;
       if(command.error = command.feedError(game,feed)) {
         if(command.error == "InsufficientBushelsWithCommand"){
-          var buyPhrase = command.buy < 0 ? 'WithSell' : command.buy > 0 ? 'WithBuy' : '';
+          const buyPhrase = command.buy < 0 ? 'WithSell' : command.buy > 0 ? 'WithBuy' : '';
           return {reply: 'Actions.Errors.Feed.'+command.error+buyPhrase,to: 'action'};
         }
         return {reply: 'Actions.Errors.Feed.'+command.error,to: 'action'};
@@ -118,7 +118,7 @@ module.exports = function(skill) {
       return {reply: 'Actions.Validate.Feed',to: 'action'};
     }
     else if(request.intent.name == 'FeedEveryoneIntent') {
-      var feed = command.mostCanFeed(game);
+      const feed = command.mostCanFeed(game);
       command.feed = feed;
       if(feed == 0) return {reply: 'Actions.Errors.FeedEveryone',to: 'action'};
       else if (feed == game.population) return {reply: 'Actions.Validate.FeedEveryone',to: 'action'};
@@ -129,17 +129,17 @@ module.exports = function(skill) {
       return {reply: 'Actions.Validate.FeedNoOne',to: 'action'};
     }
     else if(request.intent.name == 'PlantIntent') {
-      var plant = +request.intent.params.plantCnt;
+      const plant = +request.intent.params.plantCnt;
       command.attemptedPlant = plant;
       if(command.error = command.plantError(game,plant)) {
-        var buyPhrase = command.buy < 0 ? 'WithSell' : command.buy > 0 ? 'WithBuy' : ''
+        const buyPhrase = command.buy < 0 ? 'WithSell' : command.buy > 0 ? 'WithBuy' : ''
         return {reply: 'Actions.Errors.Plant.'+command.error+buyPhrase,to: 'action'};
       }
       command.plant = plant;
       return {reply: 'Actions.Validate.Plant',to: 'action'};
     }
     else if(request.intent.name == 'PlantAllIntent') {
-      var plant = command.mostCanPlant(game);
+      const plant = command.mostCanPlant(game);
       command.plant = plant;
       if(plant == 0) return {reply: 'Actions.Errors.PlantAll',to: 'action'};
       else if (command.bushelsLeft(game) && plant == game.acres) return {reply: 'Actions.Validate.PlantAll',to: 'action'};
