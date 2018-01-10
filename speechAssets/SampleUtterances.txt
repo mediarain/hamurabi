@@ -19,10 +19,10 @@ LaunchIntent play the game
 LaunchIntent start the game
 LaunchIntent launch the game
 LaunchIntent open the game
-LaunchIntent play  please
-LaunchIntent start  please
-LaunchIntent launch  please
-LaunchIntent open  please
+LaunchIntent play please
+LaunchIntent start please
+LaunchIntent launch please
+LaunchIntent open please
 LaunchIntent play
 LaunchIntent start
 LaunchIntent launch
@@ -991,7 +991,6 @@ AMAZON.HelpIntent please help me
 AMAZON.HelpIntent please offer help options
 AMAZON.HelpIntent please open the help menu
 AMAZON.HelpIntent please take me to the help menu
-AMAZON.HelpIntent please tell me about this skill
 AMAZON.HelpIntent please tell me about this skill
 AMAZON.HelpIntent please tell me help options
 AMAZON.HelpIntent please tell me how can i use you

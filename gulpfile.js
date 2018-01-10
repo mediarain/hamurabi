@@ -46,9 +46,9 @@ gulp.task('zip',['clean'], function(cb){
 });
 
  gulp.task('compile', function (cb) {
-   fs.readFile(path.join(__dirname,'interaction-model','utterances-src.txt'),function(err,file){
+   fs.readFile(path.join(__dirname,'speechAssets','SampleUtterances-src.txt'),function(err,file){
      if(err) return cb(err);
      var expanded = UtteranceExpaander(file);
-     fs.writeFile(path.join(__dirname,'interaction-model','utterances.txt'),expanded,cb);
+     fs.writeFile(path.join(__dirname,'speechAssets','SampleUtterances.txt'),expanded,cb);
    });
  });

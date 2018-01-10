@@ -15,7 +15,6 @@ describe('end to end',function(){
   })
 
   itIs('buy-valid',function(res){
-    console.log(res);
     assert.match(res.response.outputSpeech.ssml,/You're buying 5 acres./i);
     assert.equal(res.sessionAttributes.state,'query-action');
     assert.equal(res.sessionAttributes.modelData.command.buy,5);
