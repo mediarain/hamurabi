@@ -1,7 +1,4 @@
-var fs = require('fs')
-  , path = require('path')
-  , config = require('../../config')
-  , variables = require('../../skill/variables')
+const variables = require('../../skill/variables')
   , assert = require('chai').assert
   , HammurabiGame = require('../../services/HammurabiGame.js')
 ;
@@ -17,9 +14,8 @@ describe('variables',function(){
         "IN YEAR 1 YOUR POPULATION IS 100.\n" +
         "THE CITY OWNS 1000 ACRES.\n" +
         "YOU HAVE 2800 BUSHELS IN STORE.\n" +
-        "LAND IS TRADING AT 17 BUSHELS PER ACRE."
-                  );
-        })
+        "LAND IS TRADING AT 17 BUSHELS PER ACRE.");
+    })
 
     it('Reports a normal year',function(){
       var game = HammurabiGame.fromData({
@@ -41,8 +37,7 @@ describe('variables',function(){
         "THE CITY NOW OWNS 456 ACRES.\n" +
         "YOU HARVESTED 3 BUSHELS PER ACRE.\n" +
         "YOU NOW HAVE 80 BUSHELS IN STORE.\n" +
-        "LAND IS TRADING AT 17 BUSHELS PER ACRE."
-                  );
+        "LAND IS TRADING AT 17 BUSHELS PER ACRE.");
     });
 
     it('Reports a rat year',function(){
@@ -65,10 +60,9 @@ describe('variables',function(){
         "POPULATION IS NOW 103.\n" +
         "THE CITY NOW OWNS 456 ACRES.\n" +
         "YOU HARVESTED 3 BUSHELS PER ACRE.\n" +
-        "RATS ATE 30 BUSHELS.\n"+
+        "RATS ATE 30 BUSHELS.\n" +
         "YOU NOW HAVE 80 BUSHELS IN STORE.\n" +
-        "LAND IS TRADING AT 17 BUSHELS PER ACRE."
-                  );
+        "LAND IS TRADING AT 17 BUSHELS PER ACRE.");
     });
 
     it('Reports a plague year',function(){
@@ -92,8 +86,7 @@ describe('variables',function(){
         "THE CITY NOW OWNS 456 ACRES.\n" +
         "YOU HARVESTED NO BUSHELS PER ACRE.\n" +
         "YOU NOW HAVE 80 BUSHELS IN STORE.\n" +
-        "LAND IS TRADING AT 17 BUSHELS PER ACRE."
-                  );
+        "LAND IS TRADING AT 17 BUSHELS PER ACRE.");
     });
   });
 });

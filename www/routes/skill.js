@@ -1,8 +1,9 @@
 'use strict';
 
-var router = exports.router = require('express').Router(),
-    skill = require('../../skill'),
-    config = require('../../config');
+var router = exports.router = require('express').Router()
+  , skill = require('../../skill')
+  , config = require('../../config')
+;
 
 exports.mountPath = '/skill';
 
@@ -19,8 +20,8 @@ if (config.server.hostSkill) {
       }
     },function(err,msg){
       if(err) {
-          res.status(500);
-          res.json(e);
+        res.status(500);
+        res.json(err);
       }
       else {
         res.json(msg);

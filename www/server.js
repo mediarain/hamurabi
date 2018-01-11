@@ -1,13 +1,12 @@
 'use strict';
-var express = require('express'),
-    bodyParser = require('body-parser'),
-    morgan = require('morgan'),
-    http = require('http'),
-    path = require('path'),
-    config = require('../config'),
-    env = require('../config/env.js'),
-    skillRoute = require('./routes/skill.js')
-    ;
+var express = require('express')
+  , bodyParser = require('body-parser')
+  , morgan = require('morgan')
+  , http = require('http')
+  , config = require('../config')
+  , env = require('../config/env.js')
+  , skillRoute = require('./routes/skill.js')
+;
 
 console.log('Attempting to start.\r\n\t'
             + 'Node version: '

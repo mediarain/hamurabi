@@ -20,12 +20,12 @@ class HammurabiGame {
     var prior = this;
     if(prior.hasRevolt) return prior;
     var next = new HammurabiGame({
-          year: prior.year + 1,
-          population: prior.population,
-          bushels: prior.bushels,
-          acres: prior.acres,
-          eaten: 0
-      });
+      year: prior.year + 1,
+      population: prior.population,
+      bushels: prior.bushels,
+      acres: prior.acres,
+      eaten: 0
+    });
 
     var err = cmd.buyError(prior,cmd.buy);
     if(err) throw new Error(err);
@@ -42,12 +42,11 @@ class HammurabiGame {
     next.acresCost = cmd.acreCost || _.random(17, 28);
     // Rats
     var rand = cmd.ratsRoll || _.random(1,5);
-    if (rand % 2 == 1)
-    {
+    if (rand % 2 === 1) {
       next.eaten = Math.floor(next.bushels / rand);
     }
     next.bushels = next.bushels - next.eaten + next.harvest;
-    var rand = cmd.migrantRoll || _.random(1,5);
+    rand = cmd.migrantRoll || _.random(1,5);
     next.immigrants = Math.floor(rand * (gameParams.bushelsToFeedPerson * next.acres + next.bushels) / next.population / 100 + 1);
     // *** HOW MANY PEOPLE HAD FULL TUMMIES?
     var fedPeople = Math.min(cmd.feed,prior.population);

@@ -46,7 +46,7 @@ module.exports = function(skill){
   skill.onRequestStarted(function(event,reply) {
     const fromState = event.session.new ? 'entry' : event.session.attributes.state || 'entry';
     event['tracker-flow'] = [fromState];
-    if(event.request.type == 'IntentRequest') {
+    if(event.request.type === 'IntentRequest') {
       let slots = Object.keys(event.intent.params).length > 0 ? JSON.stringify(event.intent.params) : '';
       info(`Got ${event.intent.name}${slots} in state [${fromState}]`)
     }
@@ -76,7 +76,7 @@ module.exports = function(skill){
   })
 
   skill.onStateMachineError(function(event,reply, err) {
-   error(err.stack || err)
+    error(err.stack || err)
   })
 
   skill.onUnhandledState(function(event) {

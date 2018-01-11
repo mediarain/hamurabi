@@ -24,7 +24,7 @@ class Command {
   }
 
   bushelsLeft(state) {
-    return state.bushels - this.feed * gameParams.bushelsToFeedPerson - this.plant - this.buy * state.acresCost ;
+    return state.bushels - this.feed * gameParams.bushelsToFeedPerson - this.plant - this.buy * state.acresCost;
   }
 
   acresLeft(state) {

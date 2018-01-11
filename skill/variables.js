@@ -1,7 +1,6 @@
 'use strict';
 
 var _ = require('lodash')
-  , Promise = require('bluebird')
   , lang = require('alexa-helpers').lang
   , gameParams = require('../config').game
   ;
@@ -120,11 +119,11 @@ exports.commandStatus = function(game) {
 }
 
 exports.kingdomStatus = function(game) {
-  if(game.year == 1) {
+  if(game.year === 1) {
     return "HAMURABI: I BEG TO REPORT TO YOU,\n" +
   "IN YEAR " + game.year +" YOUR POPULATION IS " + game.population + ".\n" +
   "THE CITY OWNS " + acres(game.acres) + ".\n" +
-  ( game.year != 1 ?"YOU HARVESTED " + bushels(game.yield) +" PER ACRE.\n":'') +
+  ( game.year !== 1 ?"YOU HARVESTED " + bushels(game.yield) +" PER ACRE.\n":'') +
   "YOU HAVE " + bushels(game.bushels) +" IN STORE.\n" +
   "LAND IS TRADING AT " + bushels(game.acresCost) + " PER ACRE."
   }
@@ -134,11 +133,10 @@ exports.kingdomStatus = function(game) {
 ( game.hadPlague  ? "A HORRIBLE PLAGUE STRUCK! HALF THE PEOPLE DIED.\n" :'') +
 "POPULATION IS NOW " + game.population + ".\n" +
 "THE CITY NOW OWNS " + acres(game.acres) + ".\n" +
-( game.year != 1 ?"YOU HARVESTED " + bushels(game.yield) +" PER ACRE.\n":'') +
+( game.year !== 1 ?"YOU HARVESTED " + bushels(game.yield) +" PER ACRE.\n":'') +
 ( game.eaten ?"RATS ATE " + bushels(game.eaten) +".\n":'') +
 "YOU NOW HAVE " + bushels(game.bushels) +" IN STORE.\n" +
-"LAND IS TRADING AT " + bushels(game.acresCost) + " PER ACRE."
-          ;
+"LAND IS TRADING AT " + bushels(game.acresCost) + " PER ACRE.";
 }
 
 exports.finalKingdomStatus = function(game) {
@@ -147,8 +145,7 @@ exports.finalKingdomStatus = function(game) {
       "DUE TO THIS EXTREME MISMANAGEMENT YOU HAVE NOT ONLY\n" +
       "BEEN IMPEACHED AND THROWN OUT OF OFFICE BUT YOU HAVE\n" +
       "ALSO BEEN DECLARED NATIONAL FINK!!\n" + despedida
-  , acresPerPerson = game.acresPerPerson
-;
+    , acresPerPerson = game.acresPerPerson;
 
   if(game.hasRevolt) {
     return "YOU STARVED " + people(game.peopleDied) + " IN ONE YEAR!!!\n" + loseMsg;
@@ -164,9 +161,8 @@ exports.finalKingdomStatus = function(game) {
     return msg + "YOUR HEAVY-HANDED PERFORMANCE SMACKS OF NERO AND IVAN IV.\n" +
       "THE PEOPLE (REMAINING) FIND YOU AN UNPLEASANT RULER, AND,\n"+
       "FRANKLY, HATE YOUR GUTS!\n" + despedida;
-      ;
   }
-  else if (game.percentPopDied > 3 || acresPerPerson < 10)
+  if (game.percentPopDied > 3 || acresPerPerson < 10)
   {
     return msg + "YOUR PERFORMANCE COULD HAVE BEEN SOMEWHAT BETTER, BUT REALLY WASN'T TOO BAD AT ALL.\n" +
       Math.floor(game.population * .8 * Math.random() )+ " PEOPLE WOULD " +
@@ -182,19 +178,19 @@ exports.finalKingdomStatus = function(game) {
 
 function people(cnt) {
   return !cnt ? 'NOBODY'
-       : cnt == 1 ? '1 PERSON'
-       : '' + cnt +' PEOPLE'
+    : cnt === 1 ? '1 PERSON'
+    : '' + cnt +' PEOPLE';
 }
 
 function acres(cnt) {
   return !cnt ? 'NO ACRES'
-       : cnt == 1 ? '1 ACRE'
-       : cnt <= 1 ? '1 ACRE'
-       : '' + cnt +' ACRES'
+    : cnt === 1 ? '1 ACRE'
+    : cnt <= 1 ? '1 ACRE'
+    : '' + cnt +' ACRES'
 }
 
 function bushels(cnt) {
   return !cnt ? 'NO BUSHELS'
-       : cnt == 1 ? '1 BUSHEL'
-       : '' + cnt +' BUSHELS'
+    : cnt === 1 ? '1 BUSHEL'
+    : '' + cnt +' BUSHELS'
 }

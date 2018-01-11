@@ -5,7 +5,7 @@
  */
 'use strict';
 
-var responses = function () {
+var responses = (function () {
 
   return {
     "Errors": {
@@ -94,14 +94,14 @@ var responses = function () {
     "Cancel": { say: "Ok. I've cleared you plans for this year." },
     "Wait": { say: "Ok. I'll give you a second to think it over. <break time=\"10s\"/>" },
     "StartOverQuery": {
-       ask: "Not going so great? Do you want to start over?",
-       reprompt: "Do you want to start over?",
+      ask: "Not going so great? Do you want to start over?",
+      reprompt: "Do you want to start over?",
     },
     "StartOver": { say: "Running a kingdom is harder than it sounds. Let's try again." },
     "StartNew": { say: "Great. Let's give it a try." },
     "ExitQuery": {
-       ask: "Exit? Are you a coward? Would you abandon your people?",
-       reprompt: "Do you want to exit Hammurabi?",
+      ask: "Exit? Are you a coward? Would you abandon your people?",
+      reprompt: "Do you want to exit Hammurabi?",
     },
     "Goodbye": { tell: "You sneak out the palace's back door to avoid the mobs. At least you saved yourself." },
     "Report": {
@@ -133,5 +133,5 @@ var responses = function () {
       "Population": { say: "You have {populationPeople} in your kingdom.", },
     }
   };
-}();
+}());
 module.exports = responses;

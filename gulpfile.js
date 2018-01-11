@@ -1,17 +1,15 @@
 "use strict";
 
-var gulp = require('gulp')
-    , watch = require('gulp-watch')
-    , runSequence = require('run-sequence')
-    , nodemon = require('gulp-nodemon')
-    , debug = require('gulp-debug')
-    , rimraf = require('gulp-rimraf')
-    , UtteranceExpaander = require('alexa-utterance-expander')
-    , zip = require('gulp-zip')
-    , run = require('gulp-run')
-    , fs = require('fs')
-    , path = require('path')
-  ;
+const gulp = require('gulp')
+  , nodemon = require('gulp-nodemon')
+  , debug = require('gulp-debug') // eslint-disable-line no-unused-vars
+  , rimraf = require('gulp-rimraf')
+  , UtteranceExpaander = require('alexa-utterance-expander')
+  , zip = require('gulp-zip')
+  , run = require('gulp-run')
+  , fs = require('fs')
+  , path = require('path')
+;
 
 gulp.task('watch', function (cb) {
   nodemon({
@@ -34,8 +32,8 @@ gulp.task('default',['run'], function (cb) {
 });
 
 gulp.task('upload',['zip'],function(cb){
-    run('aws lambda update-function-code --profile rainlabs --function-name Hamurabi --zip-file fileb://archives/archive.zip').exec()
-        .pipe(gulp.dest('output'));
+  run('aws lambda update-function-code --profile rainlabs --function-name Hamurabi --zip-file fileb://archives/archive.zip').exec()
+    .pipe(gulp.dest('output'));
 });
 
 gulp.task('zip',['clean'], function(cb){
@@ -45,10 +43,10 @@ gulp.task('zip',['clean'], function(cb){
     .pipe(gulp.dest('archives'));
 });
 
- gulp.task('compile', function (cb) {
-   fs.readFile(path.join(__dirname,'interaction-model','utterances-src.txt'),function(err,file){
-     if(err) return cb(err);
-     var expanded = UtteranceExpaander(file);
-     fs.writeFile(path.join(__dirname,'interaction-model','utterances.txt'),expanded,cb);
-   });
- });
+gulp.task('compile', function (cb) {
+  fs.readFile(path.join(__dirname,'speechAssets','SampleUtterances-src.txt'),function(err,file){
+    if(err) return cb(err);
+    var expanded = UtteranceExpaander(file);
+    fs.writeFile(path.join(__dirname,'speechAssets','SampleUtterances.txt'),expanded,cb);
+  });
+});

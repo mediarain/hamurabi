@@ -1,16 +1,18 @@
 var init = require('../../../../services/HammurabiGame.js').create()
-  , _ = require('lodash')
 ;
 module.exports = {
   "session": {
     "sessionId": "SessionId.42c9fd44-0aa3-4754-a95b-2f56d6424e2a",
     "application": {},
     "attributes": {
-      "modelData": Object.assign(init , {acresCost: 20,"command": {
-        plant: 20,
-        buy: 2,
-        feed: 20,
-      }}) ,
+      "modelData": Object.assign(init , {
+        acresCost: 20,
+        "command": {
+          plant: 20,
+          buy: 2,
+          feed: 20,
+        }
+      }) ,
       "state": "query-action"
     },
     "user": {},
