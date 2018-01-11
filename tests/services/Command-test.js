@@ -1,7 +1,6 @@
 'use strict';
 
 var assert = require('chai').assert
-  , HammurabiGame = require('../../services/HammurabiGame.js')
   , Command = require('../../services/Command.js')
   ;
 

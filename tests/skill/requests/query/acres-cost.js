@@ -1,5 +1,4 @@
 var init = require('../../../../services/HammurabiGame.js').create()
-  , _ = require('lodash')
 ;
 module.exports = {
   "session": {

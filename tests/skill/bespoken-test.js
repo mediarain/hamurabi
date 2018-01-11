@@ -1,8 +1,4 @@
-const fs = require('fs')
-  , path = require('path')
-  , config = require('../../config')
-  , skill = require('../../skill')
-  , assert = require('chai').assert
+const assert = require('chai').assert
   , bst = require('bespoken-tools')
   , Promise = require('bluebird')
 ;

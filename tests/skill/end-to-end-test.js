@@ -1,6 +1,4 @@
-var fs = require('fs')
-  , path = require('path')
-  , config = require('../../config')
+var config = require('../../config')
   , skill = require('../../skill')
   , assert = require('chai').assert
 ;
@@ -126,7 +124,7 @@ describe('end to end',function(){
         if(err) return done(err);
         res  = res.toJSON();
         try{ cb(res); }
-        catch(e) { return done (e);}
+        catch(e) { return done(e);}
         done();
       });
     });
