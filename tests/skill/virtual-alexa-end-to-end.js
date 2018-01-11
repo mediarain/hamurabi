@@ -8,7 +8,7 @@ const alexa = va.VirtualAlexa.Builder()
   .sampleUtterancesFile("./speechAssets/SampleUtterances.txt") // Path to SampleUtterances
   .create();
 
-describe('bespoken',function(){
+describe('end-to-end',function(){
   it('launches and says welcome',function(){
     return alexa.launch().then(res => {
       assert.match(res.response.outputSpeech.ssml,/Welcome/i);
