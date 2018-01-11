@@ -27,7 +27,9 @@ exports.handler = function (event, context, done) {
     context = loggedContext(context, done);
   }
   skill.execute(event, context)
-  .then(res => done(null,res))
+    .then(res => {
+      done(null,res.toJSON())
+    })
   .catch(done)
 };
 
