@@ -7,7 +7,8 @@
     "compile": "node node_modules/gulp/bin/gulp.js compile",
     "start": "node node_modules/gulp/bin/gulp.js",
     "test": "mocha --harmony tests/**/*-test.js",
-    "prepush": "npm test"
+    "lint": "eslint . --fix",
+    "prepush": "npm run lint && npm test"
   },
   "repository": "https://github.com/mediarain/hammurabi-skill",
   "author": "Mitchell Harris",
@@ -31,7 +32,6 @@
     "voxa-opearlo": "^0.2.0"
   },
   "devDependencies": {
-    "bespoken-tools": "^1.2.8",
     "chai": "^3.5.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
@@ -43,6 +43,7 @@
     "gulp-run": "^1.7.1",
     "gulp-zip": "^3.2.0",
     "husky": "^0.14.3",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "virtual-alexa": "^0.3.11"
   }
 }

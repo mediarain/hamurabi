@@ -122,7 +122,6 @@ describe('end to end',function(){
       event.session.application.applicationId = config.alexa.appId;
       skill.handler(event, {},function(err,res){
         if(err) return done(err);
-        res  = res.toJSON();
         try{ cb(res); }
         catch(e) { return done(e);}
         done();
