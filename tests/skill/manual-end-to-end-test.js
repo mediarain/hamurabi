@@ -1,5 +1,5 @@
-var config = require('../../config')
-  , skill = require('../../skill')
+var config = require('../../src/config')
+  , skill = require('../../src/skill')
   , assert = require('chai').assert
 ;
 

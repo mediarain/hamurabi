@@ -5,7 +5,6 @@ const gulp = require('gulp')
   , debug = require('gulp-debug') // eslint-disable-line no-unused-vars
   , rimraf = require('gulp-rimraf')
   , UtteranceExpaander = require('alexa-utterance-expander')
-  , zip = require('gulp-zip')
   , run = require('gulp-run')
   , fs = require('fs')
   , path = require('path')
@@ -31,16 +30,8 @@ gulp.task('run', function(cb){
 gulp.task('default',['run'], function (cb) {
 });
 
-gulp.task('upload',['zip'],function(cb){
-  run('aws lambda update-function-code --profile rainlabs --function-name Hamurabi --zip-file fileb://archives/archive.zip').exec()
-    .pipe(gulp.dest('output'));
-});
-
-gulp.task('zip',['clean'], function(cb){
-  return gulp.src(['**/*','archives/*.zip','!node_modules/gulp*/**/*','!node_modules/run-sequence/**/*','!node_modules/mocha/**/*'])
-    //.pipe(debug('in-archive'))
-    .pipe(zip('archive.zip'))
-    .pipe(gulp.dest('archives'));
+gulp.task('upload',function(){
+  return run('ask deploy -t lambda').exec()
 });
 
 gulp.task('compile', function (cb) {

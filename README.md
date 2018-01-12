@@ -1,7 +1,9 @@
-# Hamurabi Alexa
-A Node application allowing Amazon Alexa users to play the classic Hamurabi terminal game.
+Hamurabi Alexa
+===============
+A Node application allowing Amazon Alexa users to play the classic [Hamurabi](http://www.hammurabigame.com/hammurabi-game.php) terminal game.
 
-# Development Setup
+Development Setup
+-------------
  * In `config/local.json`, edit the `appId` to your own appId obtained by starting a new Alexa skill at http://developer.amazon.com
  * Update your interaction model using `intents.json` and `utterances.txt`
  * Setup Node.js  v0.10.36. This is the only version supported by AWS Lambda right now

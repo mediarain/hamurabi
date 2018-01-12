@@ -1,7 +1,7 @@
 'use strict';
 
 var assert = require('chai').assert
-  , Command = require('../../services/Command.js')
+  , Command = require('../../src/services/Command.js')
   ;
 
 describe('Command', function () {
