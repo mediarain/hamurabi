@@ -1,6 +1,6 @@
-const variables = require('../../skill/variables')
+const variables = require('../../src/skill/variables')
   , assert = require('chai').assert
-  , HammurabiGame = require('../../services/HammurabiGame.js')
+  , HammurabiGame = require('../../src/services/HammurabiGame.js')
 ;
 
 describe('variables',function(){

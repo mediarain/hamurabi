@@ -3,9 +3,8 @@ const assert = require('chai').assert
 ;
 
 const alexa = va.VirtualAlexa.Builder()
-  .handler("skill/index.handler") // Lambda function file and name
-  .intentSchemaFile("./speechAssets/IntentSchema.json") // Path to IntentSchema.json
-  .sampleUtterancesFile("./speechAssets/SampleUtterances.txt") // Path to SampleUtterances
+  .handler("src/skill/index.handler")
+  .interactionModelFile("./models/en-US.json")
   .create();
 
 describe('end-to-end',function(){

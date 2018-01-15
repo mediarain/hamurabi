@@ -1,0 +1,75 @@
+{
+  "skillManifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Rule your kingdom, trying to keep your subjects alive year after year through famines and plagues.",
+          "examplePhrases": [
+            "Alexa open Hamurabi's Kingdom",
+            "Alexa tell Hamurabi's Kingdom to play a game",
+            "Alexa ask Hamurabi's Kingdom to get help"
+          ],
+          "keywords": [
+            "hamurabi",
+            "kingdom",
+            "peasants"
+          ],
+          "name": "Hamurabi's Kingdom",
+          "smallIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.echo-sdk-ams.app.63fdbdad-fc0a-48d5-bfaf-7cf400f180f2/images/eyJkIjoiSlI5NmhCUXMxK3JURlVnOG9FcVY1WmxlUmRxd1NrdVpHUjdHSzFiMS92dGdPR0pCYUd2dkprTzNVUE14ZzZuTlJZbW14T0kvZXhoTm5TemVDUU5Tay9Wam52c3RBU3FjUTlhVDFvcy96VXN1NS8rZGZmdkJFWmdSaXozTU5mOVJhNUtZM29IeXVVSzFWcDBPSHNXZUxBPT0iLCJpdiI6Im1xRHVLZTFNQk9Pbzh0RHpWa05Zc2c9PSIsInYiOjF9",
+          "description": "Hamurabi is one of the first games made for terminal computers. In Hamurabi you manage a kingdom. Each year you must carefully balance how many bushels you'll use to feed your workers, and how much you'll plant for the next year. With famine years, plagues, and rats, it'll be a challenge to prevent revolts and prepare for the next year.",
+          "largeIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.echo-sdk-ams.app.63fdbdad-fc0a-48d5-bfaf-7cf400f180f2/images/eyJkIjoicGlXc20xTGpIaEV5TFoybXBlMUxkQ0R1SXFlcVh5V1Ziak5vM3JlZmlsNkFaUkhtSHYzZGc1SUNRdDM3eGcxOExaenBYaThwUGpLZ1N1ZFhlbkdMcFRRSTI3Z3RPQzg5ZHFPSnF1cDJILzQvZW1QRGdJNWdZOXFnVEFVQkZmT0FEMzBmL0RpeWxwb2phTHVFSFpJQTl3PT0iLCJpdiI6IkQ1K2YzVTF6aG1NcEtEMHVKVFNQSGc9PSIsInYiOjF9"
+        },
+        "en-IN": {
+          "summary": "Rule your kingdom, trying to keep your subjects alive year after year through famines and plagues.",
+          "examplePhrases": [
+            "Alexa open Hamurabi's Kingdom",
+            "Alexa tell Hamurabi's Kingdom to play a game",
+            "Alexa ask Hamurabi's Kingdom to get help"
+          ],
+          "keywords": [
+            "hamurabi",
+            "kingdom",
+            "peasants"
+          ],
+          "name": "Hamurabi's Kingdom",
+          "smallIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.echo-sdk-ams.app.63fdbdad-fc0a-48d5-bfaf-7cf400f180f2/images/eyJkIjoibTJOaUlCSG1tMUdVVEN2VnlGV0lzeXdnamVJSmVrVms1dzJ3OGUyVFIwMEQwNGhrWWI3R3VoQ2hYayt1eTc1MnlIUDRqaVdDdVZmNVpFRmxYSUJTcTQxM3VubU56bVBTaUlwYUp1WHl1SjVMOTZIYnpnYmhrck16dnd1V0hsenU0d2lYclZwazBqVlhuOExiTkVrZll3PT0iLCJpdiI6Ik9jdzZNUUVaWFg0eE5SbkZNM1hiWWc9PSIsInYiOjF9",
+          "description": "Hamurabi is one of the first games made for terminal computers. In Hamurabi you manage a kingdom. Each year you must carefully balance how many bushels you'll use to feed your workers, and how much you'll plant for the next year. With famine years, plagues, and rats, it'll be a challenge to prevent revolts and prepare for the next year.",
+          "largeIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.echo-sdk-ams.app.63fdbdad-fc0a-48d5-bfaf-7cf400f180f2/images/eyJkIjoiRFlCM2pRV0xOYUtKOGtJNGJBNTdpYi9GWUpVV2gzSXJ6MUNBRGNyaFJoNi9MT2tWRzFPZzhwckhhdGFGYlBYbE4zU2p0VlM3M0Y5OTFrWWxhVERZZmlQdGNLbEx0OTFnT2VrQ01EQ1hMZWNGNDR0SWE0L3J4aUNVNE9KNm5kNmwwWnpVVXlnbHJibnJHdWY3THN6cFF3PT0iLCJpdiI6ImFVcHRZMXFkLzlpNHg5NTByVzhPUFE9PSIsInYiOjF9"
+        },
+        "en-GB": {
+          "summary": "Rule your kingdom, trying to keep your subjects alive year after year through famines and plagues.",
+          "examplePhrases": [
+            "Alexa open Hamurabi's Kingdom",
+            "Alexa tell Hamurabi's Kingdom to play a game",
+            "Alexa ask Hamurabi's Kingdom to get help"
+          ],
+          "keywords": [
+            "hamurabi",
+            "kingdom",
+            "peasants"
+          ],
+          "name": "Hamurabi's Kingdom",
+          "smallIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.echo-sdk-ams.app.63fdbdad-fc0a-48d5-bfaf-7cf400f180f2/images/eyJkIjoiVWY1WDdVZ0psWS9tWUFneGRFdHh3VXlrTmFueW4vR0JLaDdOczBXWUExRWQvVWNabEp2NUY5VklNRjBpSXJJN3ZKektTc1JPVDJiTHRrdDJsQ1pURkVFbnE2R3hGOW93OHdXZTVNSnZGREFmSmNhc0l2SlFTREZReVcvT0hIVUF6Mkw4dUhvcDRVaUJvNkJvdDVXbVBBPT0iLCJpdiI6Ik9KalUxOGdGSmdWSFgxUXBQbEdzTGc9PSIsInYiOjF9",
+          "description": "Hamurabi is one of the first games made for terminal computers. In Hamurabi you manage a kingdom. Each year you must carefully balance how many bushels you'll use to feed your workers, and how much you'll plant for the next year. With famine years, plagues, and rats, it'll be a challenge to prevent revolts and prepare for the next year.",
+          "largeIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.echo-sdk-ams.app.63fdbdad-fc0a-48d5-bfaf-7cf400f180f2/images/eyJkIjoieFJhYXh2clVjNlZubnZKZzVTaXJ1K05RczdvNjJXUlErOUJmaDFVTU5LRzVVeVFOemN3ZVYwWmFzMnJwWURBeFIvUDFkTkZ3bTRtakoyK2ZtSWtmNUMraVZOTVBab3VEV1I5Yy9tcFNWRkVQbVdxNTAzYW5Xc3lFNjluK1cwUzROY3NvbnVVL01DQ0hhNVZEOUJPekFBPT0iLCJpdiI6IlVReTBGbVVHZHdBbG85VVpSSWpUT2c9PSIsInYiOjF9"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Launch the game, and ask for help. It *should* walk you right through it. The game lasts for 10 years. It may be helpful to play the website version first to help figure it out.\n\nhttp://www.hammurabigame.com/hammurabi-game.php\n\n\nI've received feedback in the past that the cancel intent should exit the skill. The checklist says it's OK if it does something else, as long as it's reasonable. In my skill the cancel intent will clear the user's plan for that year. The stop intent will exit the skill after and are-you-sure prompt.",
+      "category": "GAMES"
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "."
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "isExportCompliant": true,
+      "usesPersonalInfo": false
+    }
+  }
+}

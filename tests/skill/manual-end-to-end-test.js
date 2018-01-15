@@ -1,10 +1,9 @@
-var config = require('../../config')
-  , skill = require('../../skill')
+var config = require('../../src/config')
+  , skill = require('../../src/skill')
   , assert = require('chai').assert
 ;
 
 describe('end to end',function(){
-  this.timeout(1000000);
 
   itIs('launch',function(res){
     assert.match(res.response.outputSpeech.ssml,/Welcome/i);
@@ -120,7 +119,9 @@ describe('end to end',function(){
     it(requestFile,function(done){
       var event = require('./requests/'+requestFile  + '.js');
       event.session.application.applicationId = config.alexa.appId;
-      skill.handler(event, {},function(err,res){
+      skill.handler(event, {
+        awsRequestId: 'mocked',
+      }, function(err,res){
         if(err) return done(err);
         try{ cb(res); }
         catch(e) { return done(e);}

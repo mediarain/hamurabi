@@ -1,4 +1,4 @@
-var init = require('../../../../services/HammurabiGame.js').create()
+var init = require('../../../../src/services/HammurabiGame.js').create()
 ;
 module.exports = {
   "session": {

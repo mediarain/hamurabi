@@ -8,4 +8,4 @@ Ask calculations
 Test a play through
 allow for in-place variations in utterances
 
-Plant everything says "with the rest of your bushels" even if you've got some left over
+Bug: plant everything says "with the rest of your bushels" even if you've got some left over
