@@ -2,7 +2,3 @@ node_modules
 .DS_Store
 dump.rdb
 npm-debug.log
-/src
-/www/public
-/archives
-/output
