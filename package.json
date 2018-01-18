@@ -19,6 +19,7 @@
   "dependencies": {
     "alexa-helpers": "^1.1.5",
     "alexa-utterance-expander": "^1.0.0",
+    "bespoken-tools": "^1.2.8",
     "bluebird": "^3.3.1",
     "body-parser": "^1.14.2",
     "colors": "^1.1.2",
@@ -27,7 +28,7 @@
     "morgan": "^1.6.1",
     "string": "^3.3.1",
     "voice-insights-sdk": "^1.2.1",
-    "voxa": "^2.0.0",
+    "voxa": "git@github.com:mediarain/voxa.git#v3",
     "voxa-ga": "^1.0.1",
     "voxa-opearlo": "^0.2.0"
   },
