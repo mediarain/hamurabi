@@ -13,6 +13,10 @@
     "appVersion": "1.1"
   },
   "voiceinsights": { "token": "2cc52a90-ecba-11a6-2e36-0e2486876586" },
+  "dashbot" : {
+    "api_key": "BHkNMDJL8ITMXSaLWZ7CEOzYAmadkrWCj381LmCF",
+    "suppressSending": false
+  },
   "game": {
     "bushelsToFeedPerson": 20,
     "acresPersonWorks": 10,
