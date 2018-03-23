@@ -20,6 +20,10 @@
     "appName": "hamurabi",
     "appVersion": "1.1"
   },
+  "dashbot" : {
+    "api_key": "BHkNMDJL8ITMXSaLWZ7CEOzYAmadkrWCj381LmCF",
+    "suppressSending": false
+  },
   "game": {
     "bushelsToFeedPerson": 20,
     "acresPersonWorks": 10,

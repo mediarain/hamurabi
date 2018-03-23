@@ -17,6 +17,7 @@ require('./plugins/tracker')(skill);
 //require('./plugins/voicelabs')(skill,config.voiceinsights);
 require('voxa-opearlo')(skill,config.opearlo);
 require('voxa-ga')(skill,config.google_analytics);
+require('voxa-dashbot')(skill,config.dashbot);
 require('./events')(skill);
 require('./states')(skill);
 
